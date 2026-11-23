@@ -6,9 +6,9 @@ Aplicação web **Python + Flask + SQLite + HTML + CSS + JavaScript** para organ
 
 - **181 tópicos** com prioridades P1, P2 e P3, organizados pelas cinco disciplinas e grupos do checklist.
 - Estados **Pendente / Estudando / Concluído**, com progresso de cada disciplina.
-- **Anotações individuais por tópico** e anotações por sessão do cronograma.
+- **Anotações individuais por tópico** e anotações nos objetivos de estudo sem datas fixas.
 - **Revisões automáticas** agendadas para 1, 7 e 30 dias após marcar um tópico como concluído.
-- **15 sessões pré-cadastradas** aos sábados e domingos, entre 21/11/2026 e 09/01/2027.
+- **Plano flexível**, com sugestões de assuntos sem datas obrigatórias. É possível adicionar, editar, concluir, reabrir e excluir objetivos a qualquer momento.
 - Registro de minutos de estudo, tipo e disciplina, com histórico e gráficos simples.
 - Registro de simulados com 40 questões e pesos do edital: Português 10×2, Matemática 8×2, Gerais 6×2, Legislação 6×2, Específicos 10×4.
 - Backup e restauração em JSON, tema claro/escuro, interface responsiva e PWA instalável.
@@ -58,3 +58,32 @@ Os 181 tópicos foram extraídos do PDF `Checklist_Estudos_Tecnico_Informatica_N
 ```bash
 python -m unittest discover -s tests -v
 ```
+
+## Atualização: provas reais e datas brasileiras
+
+Na atualização, substitua **somente os arquivos do ZIP**, preservando a pasta
+`instance/` e seu banco de dados SQLite. A nova tabela de tentativas é criada
+automaticamente na primeira inicialização. Use `pip install -r requirements.txt`
+no ambiente virtual existente para instalar também `tzdata` no Windows.
+
+Acesse **Provas reais** no menu. Há nove cadernos PDF originais: Guaraniaçu,
+Santa Leopoldina, FEAS, Dezesseis de Novembro, Tapes, Mato Rico, Candiota,
+Portão e Sentinela do Sul. Selecione **Nova tentativa**, leia as questões no PDF,
+preencha o cartão de respostas e clique em **Finalizar e corrigir**. Você pode
+interromper e retomar provas sem perder as respostas e refazê-las quantas vezes
+quiser; o histórico fica em SQLite e está incluído no backup.
+
+São oito gabaritos no material. Candiota não tinha gabarito correspondente e,
+portanto, permite salvar respostas, mas **não oferece correção automática**.
+Os gabaritos marcados como preliminares podem ser alterados pelo organizador.
+Nas provas com questões anuladas, a questão recebe crédito.
+
+Datas exibidas e digitadas pelo usuário seguem o formato **dd/mm/aaaa**.
+Internamente, banco de dados e APIs utilizam `aaaa-mm-dd` (ISO 8601), sem alterar
+cálculos ou ordenações. Os formulários validam a data antes de salvar.
+
+Para verificar a instalação: `python -m unittest discover -s tests -v`.
+
+## Atualização do plano flexível
+
+Ao iniciar a versão atualizada, o aplicativo transforma automaticamente o antigo cronograma com datas em uma lista de objetivos sem prazo definido. Marcações de concluído e anotações já existentes são preservadas. Faça um backup JSON antes da atualização e mantenha a pasta `instance` intacta. A data oficial da prova, as datas do histórico e as sugestões de revisão continuam funcionando normalmente.

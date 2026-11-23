@@ -13,6 +13,8 @@ app=Flask(__name__)
 app.config.update(SECRET_KEY=os.getenv('SECRET_KEY',secrets.token_hex(32)),JSON_AS_ASCII=False,MAX_CONTENT_LENGTH=1024*1024)
 TZ=ZoneInfo('America/Sao_Paulo')
 EXAM='2027-01-10'
+EXAM_ASSETS=ROOT/'exam_assets'
+REAL_EXAMS={e['id']:e for e in json.loads((EXAM_ASSETS/'catalog.json').read_text(encoding='utf-8'))}
 WRITE_LOCK=threading.Lock()
 
 def today():return datetime.now(TZ).date()
@@ -30,14 +32,23 @@ def close_db(_):
 
 def init_db():
     con=sqlite3.connect(DB_PATH)
+    first_planner = not con.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='planner'").fetchone()
     con.executescript('''PRAGMA journal_mode=WAL;
     CREATE TABLE IF NOT EXISTS subjects(id INTEGER PRIMARY KEY,name TEXT UNIQUE NOT NULL,points INTEGER NOT NULL,sort INTEGER NOT NULL);
     CREATE TABLE IF NOT EXISTS topics(id INTEGER PRIMARY KEY,subject_id INTEGER NOT NULL REFERENCES subjects(id),section TEXT NOT NULL,title TEXT NOT NULL,priority TEXT NOT NULL,status TEXT NOT NULL DEFAULT 'pending',notes TEXT NOT NULL DEFAULT '',completed_at TEXT,updated_at TEXT,UNIQUE(subject_id,section,title));
     CREATE TABLE IF NOT EXISTS sessions(id INTEGER PRIMARY KEY,day TEXT NOT NULL,minutes INTEGER NOT NULL CHECK(minutes>0 AND minutes<=600),subject_id INTEGER REFERENCES subjects(id),kind TEXT NOT NULL,notes TEXT NOT NULL DEFAULT '',created_at TEXT NOT NULL);
     CREATE TABLE IF NOT EXISTS exams(id INTEGER PRIMARY KEY,day TEXT NOT NULL,name TEXT NOT NULL,port INTEGER NOT NULL,mat INTEGER NOT NULL,ger INTEGER NOT NULL,leg INTEGER NOT NULL,esp INTEGER NOT NULL,notes TEXT NOT NULL DEFAULT '',created_at TEXT NOT NULL);
     CREATE TABLE IF NOT EXISTS revisions(id INTEGER PRIMARY KEY,topic_id INTEGER NOT NULL REFERENCES topics(id) ON DELETE CASCADE,due_date TEXT NOT NULL,kind TEXT NOT NULL,completed_at TEXT, UNIQUE(topic_id,due_date,kind));
-    CREATE TABLE IF NOT EXISTS planner(id INTEGER PRIMARY KEY,day TEXT UNIQUE NOT NULL,focus TEXT NOT NULL,done INTEGER NOT NULL DEFAULT 0,notes TEXT NOT NULL DEFAULT '');
+    CREATE TABLE IF NOT EXISTS planner(id INTEGER PRIMARY KEY,focus TEXT NOT NULL,done INTEGER NOT NULL DEFAULT 0,notes TEXT NOT NULL DEFAULT '');
+    CREATE TABLE IF NOT EXISTS real_exam_attempts(id INTEGER PRIMARY KEY, exam_id TEXT NOT NULL, answers TEXT NOT NULL DEFAULT '{}', started_at TEXT NOT NULL, updated_at TEXT NOT NULL, completed_at TEXT, CHECK(length(answers)<15000));
     ''')
+    # Migrar a lista antiga com datas para objetivos livres sem perder marcações e notas.
+    if 'day' in [r[1] for r in con.execute('PRAGMA table_info(planner)')]:
+        with con:
+            con.execute('ALTER TABLE planner RENAME TO planner_old')
+            con.execute("CREATE TABLE planner(id INTEGER PRIMARY KEY,focus TEXT NOT NULL,done INTEGER NOT NULL DEFAULT 0,notes TEXT NOT NULL DEFAULT '')")
+            con.execute('INSERT INTO planner(id,focus,done,notes) SELECT id,focus,done,notes FROM planner_old ORDER BY day')
+            con.execute('DROP TABLE planner_old')
     weights={'Conhecimentos Específicos':40,'Língua Portuguesa':20,'Matemática':16,'Conhecimentos Gerais':12,'Legislação':12}
     data=json.loads((ROOT/'seed.json').read_text(encoding='utf-8'))
     with con:
@@ -47,8 +58,15 @@ def init_db():
             for group in subject['groups']:
                 for topic in group['topics']:
                     con.execute('INSERT OR IGNORE INTO topics(subject_id,section,title,priority) VALUES (?,?,?,?)',(sid,group['name'],topic['title'],topic['priority']))
-        plan=[('2026-11-21','Redes TCP/IP, DNS e DHCP'),('2026-11-22','Matemática: regra de três e porcentagem'),('2026-11-28','Segurança da Informação'),('2026-11-29','Português: gramática e interpretação'),('2026-12-05','Normas legais de Informática'),('2026-12-06','Windows, Linux e hardware'),('2026-12-12','Simulado Guaraniaçu: questões 1–20'),('2026-12-13','Simulado Guaraniaçu: questões 21–40'),('2026-12-19','Regime jurídico e Lei Orgânica'),('2026-12-20','Matemática financeira e geometria'),('2026-12-26','Simulado Santa Leopoldina: questões 1–20'),('2026-12-27','Simulado Santa Leopoldina: questões 21–40'),('2027-01-02','Simulado Dezesseis de Novembro: 1–20'),('2027-01-03','Simulado Dezesseis de Novembro: 21–40'),('2027-01-09','Revisão final: legislação, fórmulas e erros')]
-        for day,focus in plan:con.execute('INSERT OR IGNORE INTO planner(day,focus) VALUES (?,?)',(day,focus))
+        if first_planner:
+            suggestions=['Redes TCP/IP, DNS e DHCP','Matemática: regra de três e porcentagem',
+                'Segurança da Informação','Português: gramática e interpretação',
+                'Normas legais de Informática','Windows, Linux e hardware',
+                'Prova real: Guaraniaçu','Regime jurídico e Lei Orgânica',
+                'Matemática financeira e geometria','Prova real: Santa Leopoldina',
+                'Prova real: Dezesseis de Novembro','Revisão dos erros e legislação']
+            for focus in suggestions:
+                con.execute('INSERT INTO planner(focus) VALUES (?)',(focus,))
     con.close()
 
 init_db()
@@ -66,7 +84,7 @@ def security():
 
 @app.after_request
 def headers(resp):
-    resp.headers['X-Content-Type-Options']='nosniff';resp.headers['X-Frame-Options']='DENY'
+    resp.headers['X-Content-Type-Options']='nosniff';resp.headers['X-Frame-Options']='SAMEORIGIN' if request.path.startswith('/exam-files/') else 'DENY'
     resp.headers['Referrer-Policy']='same-origin'
     if request.path.startswith('/api/'):resp.headers['Cache-Control']='no-store'
     return resp
@@ -120,7 +138,7 @@ def err(e):return jsonify(error=getattr(e,'description',str(e))),e.code
 def bootstrap():
     con=db();subjects=[rowdict(r) for r in con.execute('SELECT * FROM subjects ORDER BY sort')]
     topics=[rowdict(r) for r in con.execute('SELECT * FROM topics ORDER BY subject_id,id')]
-    planner=[rowdict(r) for r in con.execute('SELECT * FROM planner ORDER BY day')]
+    planner=[rowdict(r) for r in con.execute('SELECT * FROM planner ORDER BY done,id')]
     sessions=[rowdict(r) for r in con.execute('SELECT * FROM sessions ORDER BY day DESC,id DESC LIMIT 200')]
     exams=[rowdict(r) for r in con.execute('SELECT *,port*2+mat*2+ger*2+leg*2+esp*4 AS score FROM exams ORDER BY day DESC,id DESC')]
     revisions=[rowdict(r) for r in con.execute('SELECT r.*,t.title,t.subject_id FROM revisions r JOIN topics t ON t.id=r.topic_id WHERE r.completed_at IS NULL ORDER BY due_date,id LIMIT 300')]
@@ -184,22 +202,30 @@ def revision_update(rid):
     with con:con.execute('UPDATE revisions SET completed_at=? WHERE id=?',(datetime.now(TZ).isoformat(),rid))
     return jsonify(ok=True)
 
+@app.post('/api/planner')
+def planner_create():
+    obj=required_data();focus=obj.get('focus','')
+    if not isinstance(focus,str) or not 1<=len(focus.strip())<=180:abort(400,'Informe um assunto com até 180 caracteres')
+    with db():db().execute('INSERT INTO planner(focus) VALUES (?)',(focus.strip(),))
+    return jsonify(ok=True),201
+
 @app.patch('/api/planner/<int:pid>')
 def planner_update(pid):
-    d=required_data();done=d.get('done');notes=d.get('notes');con=db()
+    d=required_data();done=d.get('done');notes=d.get('notes');focus=d.get('focus');con=db()
     p=con.execute('SELECT * FROM planner WHERE id=?',(pid,)).fetchone()
     if not p:abort(404,'Sessão do cronograma não encontrada')
     if done is not None and type(done)!=bool:abort(400,'Concluído inválido')
     if notes is not None and (not isinstance(notes,str) or len(notes)>3000):abort(400,'Nota inválida')
-    with con:con.execute('UPDATE planner SET done=?,notes=? WHERE id=?',(int(done) if done is not None else p['done'],notes if notes is not None else p['notes'],pid))
+    if focus is not None and (not isinstance(focus,str) or not 1<=len(focus.strip())<=180):abort(400,'Assunto inválido')
+    with con:con.execute('UPDATE planner SET done=?,notes=?,focus=? WHERE id=?',(int(done) if done is not None else p['done'],notes if notes is not None else p['notes'],focus.strip() if focus is not None else p['focus'],pid))
     return jsonify(ok=True)
 
 @app.get('/api/backup')
 def backup():
     con=db()
-    data={'version':1,'exported_at':datetime.now(TZ).isoformat(), 'topics':[rowdict(r) for r in con.execute('SELECT subject_id,section,title,status,notes,completed_at,updated_at FROM topics')], 'sessions':[rowdict(r) for r in con.execute('SELECT day,minutes,subject_id,kind,notes,created_at FROM sessions')], 'exams':[rowdict(r) for r in con.execute('SELECT day,name,port,mat,ger,leg,esp,notes,created_at FROM exams')], 'revisions':[rowdict(r) for r in con.execute('SELECT topic_id,due_date,kind,completed_at FROM revisions')], 'planner':[rowdict(r) for r in con.execute('SELECT day,focus,done,notes FROM planner')]}
+    data={'version':1,'exported_at':datetime.now(TZ).isoformat(), 'topics':[rowdict(r) for r in con.execute('SELECT subject_id,section,title,status,notes,completed_at,updated_at FROM topics')], 'sessions':[rowdict(r) for r in con.execute('SELECT day,minutes,subject_id,kind,notes,created_at FROM sessions')], 'exams':[rowdict(r) for r in con.execute('SELECT day,name,port,mat,ger,leg,esp,notes,created_at FROM exams')], 'revisions':[rowdict(r) for r in con.execute('SELECT topic_id,due_date,kind,completed_at FROM revisions')], 'planner':[rowdict(r) for r in con.execute('SELECT id,focus,done,notes FROM planner ORDER BY id')], 'real_exam_attempts':[rowdict(r) for r in con.execute('SELECT exam_id,answers,started_at,updated_at,completed_at FROM real_exam_attempts')]}
     resp=app.response_class(json.dumps(data,ensure_ascii=False,indent=2),mimetype='application/json')
-    resp.headers['Content-Disposition']=f'attachment; filename="backup-estudaobjetiva-{today().isoformat()}.json"'
+    resp.headers['Content-Disposition']=f'attachment; filename="backup-estudaobjetiva-{today().strftime("%d-%m-%Y")}.json"'
     return resp
 
 @app.post('/api/restore')
@@ -235,9 +261,125 @@ def restore():
                 if con.execute('SELECT 1 FROM topics WHERE id=?',(r['topic_id'],)).fetchone():
                     con.execute('INSERT OR IGNORE INTO revisions(topic_id,due_date,kind,completed_at) VALUES (?,?,?,?)',(r['topic_id'],iso_day(r['due_date']),str(r['kind'])[:30],r.get('completed_at')))
             except (KeyError,ValueError,TypeError):pass
-        for p in data.get('planner',[]):
-            if isinstance(p,dict) and isinstance(p.get('day'),str):
-                con.execute('UPDATE planner SET done=?,notes=? WHERE day=?',(1 if p.get('done') else 0,str(p.get('notes',''))[:3000],p['day']))
+        con.execute('DELETE FROM real_exam_attempts')
+        for attempt in data.get('real_exam_attempts',[]):
+            try:
+                if attempt.get('exam_id') not in REAL_EXAMS:continue
+                raw=json.loads(attempt.get('answers','{}'))
+                exam=REAL_EXAMS[attempt['exam_id']]
+                if not isinstance(raw,dict) or any(not str(k).isdigit() or not 1<=int(k)<=exam['count'] or v not in list('ABCDE'[:exam['options']]) for k,v in raw.items()):continue
+                con.execute('INSERT INTO real_exam_attempts(exam_id,answers,started_at,updated_at,completed_at) VALUES (?,?,?,?,?)',
+                    (attempt['exam_id'],json.dumps(raw),attempt['started_at'],attempt['updated_at'],attempt.get('completed_at')))
+            except (KeyError,ValueError,TypeError,sqlite3.Error):pass
+        if isinstance(data.get('planner'),list):
+            con.execute('DELETE FROM planner')
+            for p in data['planner'][:1000]:
+                if isinstance(p,dict) and isinstance(p.get('focus'),str) and 1<=len(p['focus'].strip())<=180:
+                    con.execute('INSERT INTO planner(focus,done,notes) VALUES (?,?,?)',(p['focus'].strip(),1 if p.get('done') else 0,str(p.get('notes',''))[:3000]))
+    return jsonify(ok=True)
+
+
+
+# Provas reais fornecidas pelo usuário — o PDF é exibido ao lado do cartão de respostas.
+def real_exam_info(item):
+    return {k:item[k] for k in ('id','name','year','count','options','gabarito','version')}
+
+def attempt_data(row):
+    exam=REAL_EXAMS[row['exam_id']]
+    response={'id':row['id'],'exam':real_exam_info(exam),'answers':json.loads(row['answers']),
+              'started_at':row['started_at'],'updated_at':row['updated_at'],
+              'completed_at':row['completed_at'],'finished':bool(row['completed_at'])}
+    if row['completed_at']:
+        official=exam['answers']
+        if official:
+            detail=[]
+            for i,key in enumerate(official,1):
+                given=response['answers'].get(str(i),'')
+                annulled=key in ('NULA','ANULADA')
+                detail.append({'number':i,'given':given,'correct':key,'annulled':annulled,
+                               'result':'anulada' if annulled else 'acerto' if given==key else 'branco' if not given else 'erro'})
+            response['correction']=detail
+            response['totals']={name:sum(d['result']==name for d in detail) for name in ('acerto','erro','branco','anulada')}
+            response['totals']['points_earned']=response['totals']['acerto']+response['totals']['anulada']
+        else:
+            response['correction']=None
+            response['totals']=None
+    return response
+
+def get_real_attempt(attempt_id):
+    row=db().execute('SELECT * FROM real_exam_attempts WHERE id=?',(attempt_id,)).fetchone()
+    if row is None:abort(404,'Tentativa não encontrada')
+    return row
+
+@app.get('/api/real-exams')
+def real_exam_list():
+    con=db()
+    attempts=[dict(r) for r in con.execute('SELECT id,exam_id,started_at,updated_at,completed_at,answers FROM real_exam_attempts ORDER BY id DESC')]
+    data=[]
+    for exam in REAL_EXAMS.values():
+        related=[a for a in attempts if a['exam_id']==exam['id']]
+        info=real_exam_info(exam)
+        info['attempts']=len(related)
+        info['latest_attempt_id']=related[0]['id'] if related else None
+        info['draft_attempt_id']=next((a['id'] for a in related if not a['completed_at']),None)
+        info['finished_count']=sum(bool(a['completed_at']) for a in related)
+        data.append(info)
+    return jsonify(exams=data)
+
+@app.get('/api/real-exams/history')
+def real_exam_history():
+    records=db().execute('SELECT * FROM real_exam_attempts ORDER BY id DESC LIMIT 200').fetchall()
+    return jsonify(attempts=[attempt_data(row) for row in records])
+
+@app.get('/exam-files/<exam_id>')
+def real_exam_pdf(exam_id):
+    if exam_id not in REAL_EXAMS:abort(404,'Prova inexistente')
+    response=send_file(EXAM_ASSETS/f'{exam_id}.pdf',mimetype='application/pdf',as_attachment=False,
+                       download_name=f'{exam_id}.pdf',conditional=True)
+    response.headers['Cache-Control']='private, max-age=3600'
+    return response
+
+@app.post('/api/real-exams/<exam_id>/attempts')
+def start_real_exam(exam_id):
+    if exam_id not in REAL_EXAMS:abort(404,'Prova inexistente')
+    now=datetime.now(TZ).isoformat()
+    con=db()
+    with con:
+        cursor=con.execute('INSERT INTO real_exam_attempts(exam_id,answers,started_at,updated_at) VALUES (?,?,?,?)',(exam_id,'{}',now,now))
+    return jsonify(attempt=attempt_data(get_real_attempt(cursor.lastrowid))),201
+
+@app.get('/api/real-exams/attempts/<int:attempt_id>')
+def read_real_attempt(attempt_id):
+    return jsonify(attempt=attempt_data(get_real_attempt(attempt_id)))
+
+@app.patch('/api/real-exams/attempts/<int:attempt_id>')
+def save_real_attempt(attempt_id):
+    row=get_real_attempt(attempt_id)
+    if row['completed_at']:abort(400,'A prova já foi finalizada. Inicie outra tentativa para refazê-la.')
+    payload=required_data()
+    answers=payload.get('answers')
+    if not isinstance(answers,dict):abort(400,'Respostas inválidas')
+    exam=REAL_EXAMS[row['exam_id']]
+    for number,letter in answers.items():
+        if not isinstance(number,str) or not number.isdigit() or not 1<=int(number)<=exam['count']:
+            abort(400,'Número da questão inválido')
+        if letter not in ['']+list('ABCDE'[:exam['options']]):abort(400,'Alternativa inválida')
+    with db():db().execute('UPDATE real_exam_attempts SET answers=?,updated_at=? WHERE id=?',
+                           (json.dumps({k:v for k,v in answers.items() if v},sort_keys=True),datetime.now(TZ).isoformat(),attempt_id))
+    return jsonify(attempt=attempt_data(get_real_attempt(attempt_id)))
+
+@app.post('/api/real-exams/attempts/<int:attempt_id>/finish')
+def finish_real_attempt(attempt_id):
+    row=get_real_attempt(attempt_id)
+    if not row['completed_at']:
+        now=datetime.now(TZ).isoformat()
+        with db():db().execute('UPDATE real_exam_attempts SET completed_at=?,updated_at=? WHERE id=?',(now,now,attempt_id))
+    return jsonify(attempt=attempt_data(get_real_attempt(attempt_id)))
+
+@app.delete('/api/real-exams/attempts/<int:attempt_id>')
+def delete_real_attempt(attempt_id):
+    get_real_attempt(attempt_id)
+    with db():db().execute('DELETE FROM real_exam_attempts WHERE id=?',(attempt_id,))
     return jsonify(ok=True)
 
 if __name__=='__main__':

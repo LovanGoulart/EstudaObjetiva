@@ -26,6 +26,16 @@ class StudyAppTests(unittest.TestCase):
         self.assertEqual(len(obj['subjects']),5)
         self.assertEqual(len(obj['topics']),181)
         self.assertEqual(len(obj['planner']),15)
+    def test_flexible_planner(self):
+        before=self.client.get('/api/bootstrap').get_json()['planner']
+        self.assertTrue(all('day' not in item for item in before))
+        r=self.send('/api/planner','post',{'focus':'Revisar DNS quando puder'})
+        self.assertEqual(r.status_code,201)
+        after=self.client.get('/api/bootstrap').get_json()['planner']
+        goal=next(item for item in after if item['focus']=='Revisar DNS quando puder')
+        self.assertEqual(self.send('/api/planner/'+str(goal['id']),data={'done':True,'notes':'Feito sem data fixa'}).status_code,200)
+        self.assertEqual(self.send('/api/planner/'+str(goal['id']),'delete',{}).status_code,405)
+        self.assertTrue(any(item['id']==goal['id'] for item in self.client.get('/api/bootstrap').get_json()['planner']))
     def test_csrf_rejects_unauthorized_writes(self):
         self.assertEqual(self.send('/api/topics/1',data={'status':'done'},token=False).status_code,403)
     def test_topic_progress_notes_and_reviews(self):
