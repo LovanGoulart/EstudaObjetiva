@@ -1,0 +1,901 @@
+[
+  {
+    "name": "Conhecimentos Específicos",
+    "groups": [
+      {
+        "name": "Hardware e Arquitetura de Computadores",
+        "topics": [
+          {
+            "title": "Componentes e periféricos",
+            "priority": "P1"
+          },
+          {
+            "title": "Processadores, memórias RAM/ROM/cache e placas-mãe",
+            "priority": "P1"
+          },
+          {
+            "title": "Dispositivos de armazenamento (HD, SSD e outros) e interfaces",
+            "priority": "P1"
+          },
+          {
+            "title": "Montagem, instalação e configuração de computadores e periféricos",
+            "priority": "P1"
+          },
+          {
+            "title": "Diagnóstico e manutenção de computadores e periféricos",
+            "priority": "P1"
+          },
+          {
+            "title": "Identificação e solução de falhas de hardware",
+            "priority": "P1"
+          }
+        ]
+      },
+      {
+        "name": "Sistemas Operacionais",
+        "topics": [
+          {
+            "title": "Instalação, configuração, operação e manutenção de Windows e Linux",
+            "priority": "P1"
+          },
+          {
+            "title": "Sistemas de arquivos",
+            "priority": "P1"
+          },
+          {
+            "title": "Gerenciamento de usuários, grupos e permissões",
+            "priority": "P1"
+          },
+          {
+            "title": "Gerenciamento de processos, serviços e dispositivos",
+            "priority": "P1"
+          },
+          {
+            "title": "Instalação, atualização e remoção de softwares e drivers",
+            "priority": "P1"
+          },
+          {
+            "title": "Diagnóstico e solução de problemas em sistemas operacionais",
+            "priority": "P1"
+          }
+        ]
+      },
+      {
+        "name": "Redes de Computadores",
+        "topics": [
+          {
+            "title": "Fundamentos de redes; modelos OSI e TCP/IP",
+            "priority": "P1"
+          },
+          {
+            "title": "Protocolos TCP/IP; endereçamento IPv4 e IPv6",
+            "priority": "P1"
+          },
+          {
+            "title": "Sub-redes e máscaras",
+            "priority": "P1"
+          },
+          {
+            "title": "Serviços DNS, DHCP, HTTP/HTTPS e outros serviços de rede",
+            "priority": "P1"
+          },
+          {
+            "title": "Redes locais, cabeadas e sem fio",
+            "priority": "P1"
+          },
+          {
+            "title": "Equipamentos de rede (switches, roteadores e outros)",
+            "priority": "P1"
+          },
+          {
+            "title": "Instalação, configuração, monitoramento, diagnóstico e manutenção de redes",
+            "priority": "P1"
+          },
+          {
+            "title": "Compartilhamento de recursos e acesso remoto",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Segurança da Informação",
+        "topics": [
+          {
+            "title": "Confidencialidade, integridade, disponibilidade e autenticidade",
+            "priority": "P1"
+          },
+          {
+            "title": "Controle de acesso; autenticação e autorização",
+            "priority": "P1"
+          },
+          {
+            "title": "Backup e recuperação de dados",
+            "priority": "P1"
+          },
+          {
+            "title": "Criptografia e certificados digitais",
+            "priority": "P1"
+          },
+          {
+            "title": "Firewall, antivírus e proteção contra códigos maliciosos",
+            "priority": "P1"
+          },
+          {
+            "title": "Vulnerabilidades, ameaças, ataques e engenharia social",
+            "priority": "P1"
+          },
+          {
+            "title": "Boas práticas de segurança",
+            "priority": "P1"
+          }
+        ]
+      },
+      {
+        "name": "Banco de Dados",
+        "topics": [
+          {
+            "title": "Conceitos e arquitetura de bancos de dados; modelo relacional",
+            "priority": "P2"
+          },
+          {
+            "title": "Tabelas, campos, chaves, relacionamentos e integridade",
+            "priority": "P1"
+          },
+          {
+            "title": "Modelagem de dados",
+            "priority": "P2"
+          },
+          {
+            "title": "SQL: consultas (SELECT), inclusão (INSERT), alteração (UPDATE) e exclusão (DELETE)",
+            "priority": "P1"
+          },
+          {
+            "title": "Administração básica, manutenção, backup e recuperação de bancos de dados",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Programação e Desenvolvimento de Sistemas",
+        "topics": [
+          {
+            "title": "Lógica de programação e algoritmos",
+            "priority": "P1"
+          },
+          {
+            "title": "Variáveis, tipos de dados e operadores",
+            "priority": "P1"
+          },
+          {
+            "title": "Estruturas condicionais e de repetição",
+            "priority": "P1"
+          },
+          {
+            "title": "Funções e estruturas de dados",
+            "priority": "P1"
+          },
+          {
+            "title": "Noções de programação orientada a objetos",
+            "priority": "P1"
+          },
+          {
+            "title": "Desenvolvimento, documentação, testes, implantação e manutenção de sistemas",
+            "priority": "P2"
+          },
+          {
+            "title": "Controle de versão",
+            "priority": "P1"
+          }
+        ]
+      },
+      {
+        "name": "Desenvolvimento Web",
+        "topics": [
+          {
+            "title": "Internet, Intranet e aplicações Web",
+            "priority": "P1"
+          },
+          {
+            "title": "Python, HTML, CSS e JavaScript",
+            "priority": "P1"
+          },
+          {
+            "title": "Estruturação e manutenção de páginas e sites",
+            "priority": "P2"
+          },
+          {
+            "title": "Noções de desenvolvimento Web",
+            "priority": "P1"
+          },
+          {
+            "title": "Acessibilidade e responsividade",
+            "priority": "P2"
+          },
+          {
+            "title": "Publicação de conteúdo",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Software e Suporte ao Usuário",
+        "topics": [
+          {
+            "title": "Instalação, configuração e uso de aplicativos e ferramentas de escritório",
+            "priority": "P1"
+          },
+          {
+            "title": "Suporte técnico ao usuário",
+            "priority": "P1"
+          },
+          {
+            "title": "Diagnóstico e resolução de problemas de hardware, software, sistemas e redes",
+            "priority": "P1"
+          },
+          {
+            "title": "Instalação e implantação de sistemas",
+            "priority": "P2"
+          },
+          {
+            "title": "Testes e acompanhamento de desempenho",
+            "priority": "P2"
+          },
+          {
+            "title": "Licenciamento e uso regular de software",
+            "priority": "P1"
+          }
+        ]
+      },
+      {
+        "name": "Gestão e Infraestrutura de TI",
+        "topics": [
+          {
+            "title": "Armazenamento, cópias de segurança e recuperação",
+            "priority": "P1"
+          },
+          {
+            "title": "Documentação técnica",
+            "priority": "P2"
+          },
+          {
+            "title": "Noções de virtualização",
+            "priority": "P2"
+          },
+          {
+            "title": "Computação em nuvem",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Relações Humanas no Trabalho",
+        "topics": [
+          {
+            "title": "Comunicação e relacionamento interpessoal",
+            "priority": "P2"
+          },
+          {
+            "title": "Comportamento individual e em grupo",
+            "priority": "P2"
+          },
+          {
+            "title": "Normas de conduta no ambiente de trabalho",
+            "priority": "P2"
+          },
+          {
+            "title": "Trabalho em equipe e atendimento ao público",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Normas Legais da Área de Informática",
+        "topics": [
+          {
+            "title": "Lei nº 9.609/1998: proteção da propriedade intelectual de programas de computador e comercialização",
+            "priority": "P1"
+          },
+          {
+            "title": "Código Penal (Decreto-Lei nº 2.848/1940): arts. 154-A e 154-B",
+            "priority": "P1"
+          },
+          {
+            "title": "Código Penal: arts. 155 e 171",
+            "priority": "P1"
+          },
+          {
+            "title": "Lei nº 12.965/2014: Marco Civil da Internet",
+            "priority": "P1"
+          },
+          {
+            "title": "Lei nº 13.709/2018: LGPD",
+            "priority": "P1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Língua Portuguesa",
+    "groups": [
+      {
+        "name": "Textos",
+        "topics": [
+          {
+            "title": "Leitura, compreensão e interpretação de textos",
+            "priority": "P1"
+          },
+          {
+            "title": "Vocabulário: significado e substituição contextual",
+            "priority": "P1"
+          },
+          {
+            "title": "Reorganização de orações e períodos",
+            "priority": "P1"
+          },
+          {
+            "title": "Coesão e coerência textual",
+            "priority": "P1"
+          },
+          {
+            "title": "Tipos e gêneros textuais",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Fono-ortografia",
+        "topics": [
+          {
+            "title": "Fonemas e grafemas",
+            "priority": "P2"
+          },
+          {
+            "title": "Estrutura, divisão e classificação silábica",
+            "priority": "P2"
+          },
+          {
+            "title": "Processos fonológicos",
+            "priority": "P3"
+          }
+        ]
+      },
+      {
+        "name": "Morfossintaxe",
+        "topics": [
+          {
+            "title": "Classes de palavras: classificação e uso",
+            "priority": "P1"
+          },
+          {
+            "title": "Processos de formação de palavras",
+            "priority": "P2"
+          },
+          {
+            "title": "Flexão nominal: gênero, número e grau",
+            "priority": "P1"
+          },
+          {
+            "title": "Flexão verbal: pessoa, tempo, número, modo, voz e aspecto",
+            "priority": "P1"
+          },
+          {
+            "title": "Concordância nominal e verbal",
+            "priority": "P1"
+          },
+          {
+            "title": "Regência nominal e verbal",
+            "priority": "P1"
+          },
+          {
+            "title": "Relação entre classes de palavras e funções sintáticas",
+            "priority": "P1"
+          }
+        ]
+      },
+      {
+        "name": "Sintaxe",
+        "topics": [
+          {
+            "title": "Sujeito, predicado, objeto, complementos e modificadores",
+            "priority": "P1"
+          },
+          {
+            "title": "Período simples e composto; coordenação e subordinação",
+            "priority": "P1"
+          },
+          {
+            "title": "Análise sintática completa",
+            "priority": "P1"
+          },
+          {
+            "title": "Concordância, regência e retomada",
+            "priority": "P1"
+          },
+          {
+            "title": "Organização sintática canônica e variações estilísticas",
+            "priority": "P2"
+          },
+          {
+            "title": "Crase",
+            "priority": "P1"
+          },
+          {
+            "title": "Colocação pronominal",
+            "priority": "P1"
+          }
+        ]
+      },
+      {
+        "name": "Semântica",
+        "topics": [
+          {
+            "title": "Sinonímia, antonímia e polissemia",
+            "priority": "P1"
+          },
+          {
+            "title": "Homônimos e parônimos",
+            "priority": "P1"
+          },
+          {
+            "title": "Denotação e conotação",
+            "priority": "P1"
+          },
+          {
+            "title": "Figuras de linguagem (metáfora, comparação, metonímia, ironia, eufemismo, hipérbole, personificação etc.)",
+            "priority": "P1"
+          },
+          {
+            "title": "Efeitos de sentido em textos argumentativos, literários e multimodais",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Variação Linguística",
+        "topics": [
+          {
+            "title": "Variedades regionais, sociais, históricas e situacionais",
+            "priority": "P2"
+          },
+          {
+            "title": "Norma-padrão e usos sociais da língua portuguesa",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Elementos Notacionais da Escrita",
+        "topics": [
+          {
+            "title": "Ortografia oficial",
+            "priority": "P1"
+          },
+          {
+            "title": "Acentuação gráfica",
+            "priority": "P1"
+          },
+          {
+            "title": "Pontuação",
+            "priority": "P1"
+          },
+          {
+            "title": "Recursos gráficos: aspas, parênteses, travessão, negrito e itálico",
+            "priority": "P2"
+          },
+          {
+            "title": "Regularidades e irregularidades ortográficas",
+            "priority": "P2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Matemática",
+    "groups": [
+      {
+        "name": "Números e Conjuntos",
+        "topics": [
+          {
+            "title": "Teoria dos conjuntos: operações, diagramas e subconjuntos",
+            "priority": "P2"
+          },
+          {
+            "title": "Sistemas de numeração",
+            "priority": "P2"
+          },
+          {
+            "title": "Conjuntos numéricos; operações e propriedades",
+            "priority": "P1"
+          },
+          {
+            "title": "Expressões numéricas",
+            "priority": "P1"
+          },
+          {
+            "title": "Reta numérica, desigualdades e valor absoluto",
+            "priority": "P2"
+          },
+          {
+            "title": "Divisibilidade, múltiplos, divisores, MDC e MMC",
+            "priority": "P1"
+          },
+          {
+            "title": "Fatoração e produtos notáveis",
+            "priority": "P2"
+          },
+          {
+            "title": "Agrupamentos usuais (dúzia, centena, milhar etc.) e numerais multiplicativos",
+            "priority": "P3"
+          },
+          {
+            "title": "Notação científica e ordens de grandeza",
+            "priority": "P2"
+          },
+          {
+            "title": "Razões, proporções e regra de três",
+            "priority": "P1"
+          },
+          {
+            "title": "Porcentagem",
+            "priority": "P1"
+          },
+          {
+            "title": "Sequências, progressões (PA e PG) e séries",
+            "priority": "P2"
+          },
+          {
+            "title": "Análise combinatória",
+            "priority": "P1"
+          }
+        ]
+      },
+      {
+        "name": "Álgebra e Funções",
+        "topics": [
+          {
+            "title": "Expressões algébricas, polinômios e frações algébricas",
+            "priority": "P2"
+          },
+          {
+            "title": "Equações e inequações de 1º e 2º graus",
+            "priority": "P1"
+          },
+          {
+            "title": "Equações polinomiais de grau superior",
+            "priority": "P3"
+          },
+          {
+            "title": "Sistemas lineares: métodos algébricos, matrizes e determinantes",
+            "priority": "P2"
+          },
+          {
+            "title": "Funções afim, quadrática, polinomiais e racionais",
+            "priority": "P1"
+          },
+          {
+            "title": "Funções exponenciais, logarítmicas e trigonométricas",
+            "priority": "P2"
+          },
+          {
+            "title": "Logaritmos: propriedades, equações e aplicações",
+            "priority": "P2"
+          },
+          {
+            "title": "Gráficos e transformações de funções",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Geometria e Medidas",
+        "topics": [
+          {
+            "title": "Geometria plana: polígonos, circunferência, círculo, perímetro, área e ângulos",
+            "priority": "P1"
+          },
+          {
+            "title": "Triângulos: semelhança, Tales e Pitágoras",
+            "priority": "P1"
+          },
+          {
+            "title": "Trigonometria básica: razões e ciclo trigonométrico",
+            "priority": "P2"
+          },
+          {
+            "title": "Escalas, ângulos e proporcionalidade",
+            "priority": "P1"
+          },
+          {
+            "title": "Geometria espacial: prismas, pirâmides, cilindros, cones e esferas",
+            "priority": "P2"
+          },
+          {
+            "title": "Áreas, volumes e planificações",
+            "priority": "P2"
+          },
+          {
+            "title": "Geometria analítica: plano cartesiano, ponto, distância e ponto médio",
+            "priority": "P2"
+          },
+          {
+            "title": "Equação da reta, circunferência e parábola",
+            "priority": "P3"
+          },
+          {
+            "title": "Transformações: translação, rotação e reflexão",
+            "priority": "P3"
+          },
+          {
+            "title": "Unidades de medida e conversões",
+            "priority": "P1"
+          }
+        ]
+      },
+      {
+        "name": "Matemática Financeira",
+        "topics": [
+          {
+            "title": "Sistema monetário brasileiro e compra e venda",
+            "priority": "P1"
+          },
+          {
+            "title": "Juros simples e compostos",
+            "priority": "P1"
+          },
+          {
+            "title": "Descontos, lucro e perda",
+            "priority": "P1"
+          },
+          {
+            "title": "Taxas e equivalência de taxas",
+            "priority": "P2"
+          },
+          {
+            "title": "Inflação, amortizações, financiamentos e aplicações financeiras",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Probabilidade e Estatística",
+        "topics": [
+          {
+            "title": "Probabilidade simples, composta e condicional",
+            "priority": "P2"
+          },
+          {
+            "title": "Noções de distribuições binomial e normal",
+            "priority": "P3"
+          }
+        ]
+      },
+      {
+        "name": "Raciocínio Lógico e Resolução de Problemas",
+        "topics": [
+          {
+            "title": "Fundamentos de lógica",
+            "priority": "P1"
+          },
+          {
+            "title": "Sequências, séries, padrões, analogias, relações e classificações",
+            "priority": "P1"
+          },
+          {
+            "title": "Identificação de padrões e regularidades",
+            "priority": "P1"
+          },
+          {
+            "title": "Resolução de problemas matemáticos contextualizados",
+            "priority": "P1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Conhecimentos Gerais",
+    "groups": [
+      {
+        "name": "Atualidades",
+        "topics": [
+          {
+            "title": "Segurança e transportes",
+            "priority": "P2"
+          },
+          {
+            "title": "Política, economia e sociedade",
+            "priority": "P1"
+          },
+          {
+            "title": "Educação, saúde e cultura",
+            "priority": "P2"
+          },
+          {
+            "title": "Tecnologia e energia",
+            "priority": "P1"
+          },
+          {
+            "title": "Relações internacionais",
+            "priority": "P2"
+          },
+          {
+            "title": "Meio ambiente, desenvolvimento sustentável e ecologia",
+            "priority": "P1"
+          },
+          {
+            "title": "Vinculações históricas entre os temas",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Serviço Público",
+        "topics": [
+          {
+            "title": "Ética e serviço público",
+            "priority": "P1"
+          },
+          {
+            "title": "Segurança do trabalho, higiene e organização",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Informática Básica",
+        "topics": [
+          {
+            "title": "Conceitos fundamentais de TI; hardware e software",
+            "priority": "P1"
+          },
+          {
+            "title": "Internet e redes: funcionamento básico, navegadores e mecanismos de busca",
+            "priority": "P1"
+          },
+          {
+            "title": "Protocolos de acesso; downloads, uploads e serviços online",
+            "priority": "P1"
+          },
+          {
+            "title": "Armazenamento em nuvem",
+            "priority": "P1"
+          },
+          {
+            "title": "Privacidade, confidencialidade e integridade de dados",
+            "priority": "P1"
+          },
+          {
+            "title": "Vírus, malwares, phishing, engenharia social, links e páginas falsas",
+            "priority": "P1"
+          },
+          {
+            "title": "Senhas seguras, backups e atualização de softwares",
+            "priority": "P1"
+          },
+          {
+            "title": "Criptografia, antivírus, firewalls e boas práticas de segurança",
+            "priority": "P1"
+          },
+          {
+            "title": "E-mail: envio, recebimento, anexos e organização de caixas postais",
+            "priority": "P1"
+          },
+          {
+            "title": "Filtros, regras de mensagens, etiqueta digital e uso institucional",
+            "priority": "P2"
+          },
+          {
+            "title": "Digitalização, conversão de documentos e assinaturas digitais",
+            "priority": "P2"
+          },
+          {
+            "title": "Google Meet, Zoom e Microsoft Teams",
+            "priority": "P2"
+          },
+          {
+            "title": "Inteligência artificial no cotidiano profissional",
+            "priority": "P1"
+          },
+          {
+            "title": "Windows 10 ou superior",
+            "priority": "P1"
+          },
+          {
+            "title": "Word 2016 ou superior, inclusive Microsoft 365",
+            "priority": "P1"
+          },
+          {
+            "title": "Excel 2016 ou superior, inclusive Microsoft 365",
+            "priority": "P1"
+          },
+          {
+            "title": "Outlook 2016 ou superior, inclusive Microsoft 365",
+            "priority": "P1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Legislação",
+    "groups": [
+      {
+        "name": "Constituição Federal",
+        "topics": [
+          {
+            "title": "Arts. 1º a 4º: princípios fundamentais",
+            "priority": "P1"
+          },
+          {
+            "title": "Arts. 5º a 17: direitos e garantias fundamentais",
+            "priority": "P1"
+          },
+          {
+            "title": "Arts. 18 a 43: organização do Estado",
+            "priority": "P1"
+          },
+          {
+            "title": "Arts. 44 a 69: Poder Legislativo e processo legislativo",
+            "priority": "P2"
+          },
+          {
+            "title": "Arts. 76 a 92: Poder Executivo e demais assuntos previstos",
+            "priority": "P2"
+          },
+          {
+            "title": "Arts. 101 e 102: Supremo Tribunal Federal",
+            "priority": "P2"
+          },
+          {
+            "title": "Arts. 127 a 129: Ministério Público",
+            "priority": "P2"
+          }
+        ]
+      },
+      {
+        "name": "Lei Orgânica do Município",
+        "topics": [
+          {
+            "title": "Lei Orgânica de Novo Cabrais: leitura integral dos dispositivos vigentes",
+            "priority": "P1"
+          },
+          {
+            "title": "Organização e competências municipais",
+            "priority": "P1"
+          },
+          {
+            "title": "Poderes municipais, administração e atribuições",
+            "priority": "P1"
+          }
+        ]
+      },
+      {
+        "name": "Lei Municipal nº 335/2001",
+        "topics": [
+          {
+            "title": "Regime Jurídico dos Servidores Públicos de Novo Cabrais: leitura integral",
+            "priority": "P1"
+          },
+          {
+            "title": "Provimento, posse, exercício e vacância",
+            "priority": "P1"
+          },
+          {
+            "title": "Direitos, deveres e proibições",
+            "priority": "P1"
+          },
+          {
+            "title": "Licenças, afastamentos e vantagens",
+            "priority": "P1"
+          },
+          {
+            "title": "Responsabilidades e penalidades",
+            "priority": "P1"
+          }
+        ]
+      }
+    ]
+  }
+]
