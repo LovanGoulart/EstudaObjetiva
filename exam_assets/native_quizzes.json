@@ -1,0 +1,987 @@
+[
+  {
+    "id": "simulado-inédito-2027",
+    "name": "Simulado inédito Novo Cabrais — 2027",
+    "year": "2027",
+    "count": 40,
+    "options": 4,
+    "gabarito": "comentado (autoral)",
+    "kind": "native",
+    "version": "Edição 2027",
+    "questions": [
+      {
+        "text": "Considerando o texto-base, a principal ideia apresentada é que a implantação do sistema de chamados:",
+        "opts": [
+          "dispensou o atendimento realizado por pessoas.",
+          "organizou o fluxo de solicitações sem substituir o diálogo.",
+          "eliminou a necessidade de avaliar os atendimentos.",
+          "tornou desnecessária a definição de prioridades."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "B",
+        "exp": "O texto indica organização das solicitações e manutenção do diálogo com o usuário."
+      },
+      {
+        "text": "No trecho \"esse retorno orienta melhorias\", a expressão \"esse retorno\" retoma:",
+        "opts": [
+          "o formulário único de abertura de chamados.",
+          "as mensagens dispersas recebidas antes da mudança.",
+          "a identificação de prioridades pela equipe.",
+          "a avaliação do atendimento realizada pelo usuário."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "D",
+        "exp": "A expressão retoma a avaliação feita pelo usuário após a conclusão do chamado."
+      },
+      {
+        "text": "Sem alterar o sentido essencial do texto, a expressão \"não eliminou a necessidade de diálogo\" pode ser substituída por:",
+        "opts": [
+          "não suprimiu a necessidade de diálogo.",
+          "impediu definitivamente o diálogo.",
+          "tornou o diálogo obrigatório por lei.",
+          "dispensou integralmente o diálogo."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "A",
+        "exp": "Eliminar e suprimir são equivalentes no contexto; a negação permanece."
+      },
+      {
+        "text": "Assinale a alternativa em que o emprego do acento indicativo de crase está CORRETO.",
+        "opts": [
+          "Os técnicos entregaram o relatório a direção.",
+          "A equipe começou à trabalhar às oito horas.",
+          "O sistema foi apresentado à direção da escola.",
+          "Os usuários chegaram à pé ao laboratório."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "C",
+        "exp": "O termo apresentar rege a preposição a, combinada ao artigo a de direção."
+      },
+      {
+        "text": "Quanto à concordância verbal, está CORRETA a frase:",
+        "opts": [
+          "Haviam três computadores desligados.",
+          "Faz dois anos que o sistema está em uso.",
+          "Existia várias solicitações pendentes.",
+          "Foi encontrado novos problemas na rede."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "B",
+        "exp": "O verbo fazer indicando tempo decorrido é impessoal e fica no singular."
+      },
+      {
+        "text": "Em relação à pontuação, assinale a alternativa CORRETA.",
+        "opts": [
+          "Quando a atualização terminou, os equipamentos foram reiniciados.",
+          "Os computadores, foram reiniciados após o teste.",
+          "A equipe informou, que o serviço havia voltado.",
+          "Depois do teste os equipamentos foram, reiniciados."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "A",
+        "exp": "A oração adverbial antecipada pode ser isolada por vírgula."
+      },
+      {
+        "text": "Assinale a frase que atende à regência verbal recomendada pela norma-padrão.",
+        "opts": [
+          "Os usuários assistiram o treinamento de segurança.",
+          "O técnico preferiu resolver do que adiar o problema.",
+          "Chegamos no laboratório para a reunião.",
+          "Os funcionários obedeceram às orientações."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "D",
+        "exp": "Obedecer é transitivo indireto e rege a preposição a."
+      },
+      {
+        "text": "Na oração \"Embora o antivírus esteja atualizado, o usuário deve manter atenção aos links\", a conjunção \"embora\" exprime ideia de:",
+        "opts": [
+          "causa.",
+          "consequência.",
+          "concessão.",
+          "finalidade."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "C",
+        "exp": "Embora é conjunção concessiva: apresenta um fato que não impede o resultado da oração principal."
+      },
+      {
+        "text": "Assinale a alternativa com colocação pronominal adequada à norma-padrão.",
+        "opts": [
+          "Nunca deve-se divulgar a senha de acesso.",
+          "Não se deve compartilhar a senha pessoal.",
+          "Jamais compartilhe-se a senha com terceiros.",
+          "Quem informou-me sobre a atualização?"
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "B",
+        "exp": "O advérbio de negação atrai o pronome se para antes do verbo."
+      },
+      {
+        "text": "Em um relatório técnico, a expressão \"mitigar riscos\" significa, nesse contexto:",
+        "opts": [
+          "reduzir a intensidade ou a probabilidade dos riscos.",
+          "ignorar os riscos previamente identificados.",
+          "ampliar os riscos para permitir testes.",
+          "transferir todos os riscos para o usuário."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "A",
+        "exp": "Mitigar é atenuar, amenizar ou reduzir."
+      },
+      {
+        "text": "Se 6 técnicos resolvem 72 chamados em 3 dias, mantendo a mesma produtividade, quantos chamados 4 técnicos resolverão em 5 dias?",
+        "opts": [
+          "48",
+          "60",
+          "72",
+          "80"
+        ],
+        "s": "Matemática",
+        "answer": "D",
+        "exp": "Taxa: 72/(6 x 3)=4 chamados por técnico/dia. Logo, 4 x 5 x 4=80."
+      },
+      {
+        "text": "Um sistema tinha 200 usuários. Após aumento de 15% e, em seguida, redução de 10% sobre a quantidade atualizada, passou a ter:",
+        "opts": [
+          "200 usuários.",
+          "207 usuários.",
+          "210 usuários.",
+          "230 usuários."
+        ],
+        "s": "Matemática",
+        "answer": "B",
+        "exp": "200 x 1,15 x 0,90 = 207 usuários."
+      },
+      {
+        "text": "Um capital de R$ 1.500,00 foi aplicado a juros simples de 2% ao mês, durante 4 meses. Qual é o montante?",
+        "opts": [
+          "R$ 1.530,00.",
+          "R$ 1.600,00.",
+          "R$ 1.620,00.",
+          "R$ 1.800,00."
+        ],
+        "s": "Matemática",
+        "answer": "C",
+        "exp": "Juros = 1.500 x 0,02 x 4 = 120; montante = 1.620."
+      },
+      {
+        "text": "A média aritmética dos tempos de atendimento de 6, 8, 10 e 12 minutos é:",
+        "opts": [
+          "9 minutos.",
+          "10 minutos.",
+          "11 minutos.",
+          "12 minutos."
+        ],
+        "s": "Matemática",
+        "answer": "A",
+        "exp": "(6+8+10+12)/4 = 36/4 = 9."
+      },
+      {
+        "text": "Em uma caixa há 2 cartões verdes e 3 azuis, de mesmo tamanho. Ao retirar um cartão ao acaso, a probabilidade de ele ser azul é:",
+        "opts": [
+          "2/5.",
+          "1/2.",
+          "3/5.",
+          "2/3."
+        ],
+        "s": "Matemática",
+        "answer": "C",
+        "exp": "São 3 resultados favoráveis entre 5 resultados equiprováveis."
+      },
+      {
+        "text": "Uma sala retangular mede 12 m de comprimento e 7 m de largura. Sua área é:",
+        "opts": [
+          "38 m².",
+          "84 m².",
+          "96 m².",
+          "168 m²."
+        ],
+        "s": "Matemática",
+        "answer": "B",
+        "exp": "Área do retângulo = 12 x 7 = 84 m²."
+      },
+      {
+        "text": "Considere: \"Se o servidor está desligado, o sistema fica indisponível\". Sabendo que o servidor está desligado, conclui-se logicamente que:",
+        "opts": [
+          "o sistema necessariamente está disponível.",
+          "o servidor precisa estar ligado.",
+          "nada se pode concluir sobre o sistema.",
+          "o sistema fica indisponível."
+        ],
+        "s": "Matemática",
+        "answer": "D",
+        "exp": "Aplicação do modus ponens: P implica Q; P é verdadeiro; logo, Q."
+      },
+      {
+        "text": "Uma identificação tem duas letras diferentes escolhidas entre A, B, C e D, seguidas de dois algarismos de 0 a 9, admitindo-se repetição nos algarismos. Quantas identificações são possíveis?",
+        "opts": [
+          "1.200.",
+          "400.",
+          "240.",
+          "1.600."
+        ],
+        "s": "Matemática",
+        "answer": "A",
+        "exp": "4 opções para a primeira letra, 3 para a segunda e 10 para cada algarismo: 4 x 3 x 10 x 10 = 1.200."
+      },
+      {
+        "text": "Uma mensagem recebida por e-mail pede a atualização imediata da senha por meio de um link desconhecido. A conduta mais segura é:",
+        "opts": [
+          "clicar no link e informar a senha, desde que a mensagem tenha logotipo.",
+          "encaminhar a mensagem a todos os colegas.",
+          "acessar o serviço pelo endereço oficial conhecido e verificar a solicitação por canal confiável.",
+          "responder ao remetente com a senha atual."
+        ],
+        "s": "Conhecimentos Gerais",
+        "answer": "C",
+        "exp": "A verificação por canal oficial reduz o risco de phishing e de páginas falsas."
+      },
+      {
+        "text": "No Excel configurado em português do Brasil, qual fórmula soma os valores de B2 até B6?",
+        "opts": [
+          "=TOTAL(B2;B6)",
+          "=SOMA(B2:B6)",
+          "=ADICIONAR(B2-B6)",
+          "=MEDIA(B2:B6)"
+        ],
+        "s": "Conhecimentos Gerais",
+        "answer": "B",
+        "exp": "A função SOMA utiliza dois-pontos para o intervalo contínuo."
+      },
+      {
+        "text": "No Windows 10 ou superior, qual atalho normalmente abre diretamente o Gerenciador de Tarefas?",
+        "opts": [
+          "Alt + F4",
+          "Ctrl + P",
+          "Windows + E",
+          "Ctrl + Shift + Esc"
+        ],
+        "s": "Conhecimentos Gerais",
+        "answer": "D",
+        "exp": "Ctrl + Shift + Esc abre o Gerenciador de Tarefas."
+      },
+      {
+        "text": "O armazenamento em nuvem caracteriza-se principalmente por:",
+        "opts": [
+          "disponibilizar dados ou serviços em infraestrutura remota acessada por rede, conforme permissões.",
+          "exigir que todos os arquivos permaneçam apenas em pendrive.",
+          "dispensar completamente autenticação e controle de acesso.",
+          "impedir sincronização entre equipamentos."
+        ],
+        "s": "Conhecimentos Gerais",
+        "answer": "A",
+        "exp": "Serviços de nuvem oferecem recursos remotos por conexão de rede, com regras de acesso."
+      },
+      {
+        "text": "No uso de inteligência artificial para redigir um documento institucional, é uma prática adequada:",
+        "opts": [
+          "publicar qualquer texto gerado sem revisão.",
+          "informar senhas de usuários para obter melhores respostas.",
+          "conferir dados, corrigir possíveis erros e observar a proteção de informações.",
+          "considerar que uma resposta automática é sempre uma fonte oficial."
+        ],
+        "s": "Conhecimentos Gerais",
+        "answer": "C",
+        "exp": "A validação humana e a proteção dos dados continuam necessárias."
+      },
+      {
+        "text": "Ao prestar atendimento ao público, um servidor adota uma conduta compatível com a ética no serviço público quando:",
+        "opts": [
+          "divulga detalhes sigilosos de chamados para ganhar agilidade.",
+          "favorece conhecidos, independentemente da ordem e da necessidade.",
+          "omite informação correta para encerrar o atendimento mais rápido.",
+          "trata o usuário com respeito, imparcialidade e atenção às regras aplicáveis."
+        ],
+        "s": "Conhecimentos Gerais",
+        "answer": "D",
+        "exp": "Urbanidade, impessoalidade e respeito às normas favorecem atendimento ético."
+      },
+      {
+        "text": "Nos termos do art. 1º da Constituição Federal, é fundamento da República Federativa do Brasil:",
+        "opts": [
+          "a unicidade partidária.",
+          "a cidadania.",
+          "a censura prévia.",
+          "a subordinação dos Municípios à União."
+        ],
+        "s": "Legislação",
+        "answer": "B",
+        "exp": "A cidadania está entre os fundamentos previstos no art. 1º da Constituição."
+      },
+      {
+        "text": "O art. 5º da Constituição assegura, nos termos da lei, o direito:",
+        "opts": [
+          "à proteção dos dados pessoais, inclusive nos meios digitais.",
+          "à divulgação irrestrita de dados particulares por órgãos públicos.",
+          "ao anonimato em toda manifestação do pensamento.",
+          "à utilização de informações sigilosas sem fundamento legal."
+        ],
+        "s": "Legislação",
+        "answer": "A",
+        "exp": "O inciso LXXIX reconhece o direito à proteção dos dados pessoais, inclusive em meios digitais."
+      },
+      {
+        "text": "Segundo o art. 30 da Constituição Federal, compete aos Municípios:",
+        "opts": [
+          "legislar sobre direito penal.",
+          "emitir moeda nacional.",
+          "legislar sobre assuntos de interesse local.",
+          "declarar guerra a outro país."
+        ],
+        "s": "Legislação",
+        "answer": "C",
+        "exp": "A competência municipal para legislar sobre assuntos de interesse local está no art. 30, I."
+      },
+      {
+        "text": "Assinale a alternativa que contém somente princípios expressos no caput do art. 37 da Constituição Federal.",
+        "opts": [
+          "Sigilo, rapidez, publicidade e hierarquia.",
+          "Igualdade, informalidade, publicidade e autonomia.",
+          "Liberdade, publicidade, oportunidade e eficiência.",
+          "Legalidade, impessoalidade, moralidade, publicidade e eficiência."
+        ],
+        "s": "Legislação",
+        "answer": "D",
+        "exp": "São os cinco princípios expressos no caput do art. 37, conhecidos como LIMPE."
+      },
+      {
+        "text": "Conforme o art. 41 da Constituição Federal, são estáveis, após três anos de efetivo exercício, os servidores:",
+        "opts": [
+          "contratados temporariamente sem concurso.",
+          "nomeados para cargo de provimento efetivo em virtude de concurso público, observadas as condições constitucionais.",
+          "ocupantes exclusivamente de cargo em comissão, independentemente de concurso.",
+          "terceirizados que atuam em órgão público."
+        ],
+        "s": "Legislação",
+        "answer": "B",
+        "exp": "A estabilidade constitucional envolve cargo efetivo provido por concurso e requisitos constitucionais, inclusive avaliação especial de desempenho."
+      },
+      {
+        "text": "Entre as normas municipais indicadas no edital, a associação CORRETA é:",
+        "opts": [
+          "Lei Orgânica: organização municipal; Lei Municipal nº 335/2001: regime jurídico dos servidores municipais.",
+          "Lei Orgânica: crimes militares; Lei nº 335/2001: regras de transporte aéreo.",
+          "Lei Orgânica: normas de trânsito federais; Lei nº 335/2001: direito marítimo.",
+          "Lei Orgânica: código penal nacional; Lei nº 335/2001: eleições presidenciais."
+        ],
+        "s": "Legislação",
+        "answer": "A",
+        "exp": "O próprio conteúdo programático identifica a Lei Orgânica municipal e a Lei nº 335/2001 como Regime Jurídico dos Servidores."
+      },
+      {
+        "text": "Em relação à arquitetura de computadores, é CORRETO afirmar que a memória cache:",
+        "opts": [
+          "substitui permanentemente qualquer dispositivo de armazenamento.",
+          "é um periférico externo destinado à impressão.",
+          "armazena exclusivamente o sistema operacional em mídia óptica.",
+          "reduz o tempo médio de acesso a dados ou instruções frequentemente utilizados."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "D",
+        "exp": "A memória cache armazena dados/instruções para reduzir a latência média de acesso."
+      },
+      {
+        "text": "Em um sistema Linux, uma permissão octal 750 para um arquivo ou diretório corresponde, respectivamente, a proprietário, grupo e outros:",
+        "opts": [
+          "rwx / rwx / ---",
+          "r-- / rwx / ---",
+          "rwx / r-x / ---",
+          "rwx / r-- / r--"
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "C",
+        "exp": "7=rwx; 5=r-x; 0=---."
+      },
+      {
+        "text": "Uma rede IPv4 com máscara /27, considerando endereços tradicionais de rede e broadcast, dispõe de quantos endereços utilizáveis para hosts?",
+        "opts": [
+          "14",
+          "30",
+          "32",
+          "62"
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "B",
+        "exp": "/27 deixa 5 bits para hosts: 2^5 - 2 = 30."
+      },
+      {
+        "text": "Em redes TCP/IP, a principal função do serviço DNS é:",
+        "opts": [
+          "traduzir nomes de domínio em registros correspondentes, como endereços IP.",
+          "distribuir automaticamente energia elétrica aos roteadores.",
+          "efetuar exclusivamente cópias de segurança.",
+          "substituir o endereçamento IP nas interfaces de rede."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "A",
+        "exp": "DNS associa nomes a registros, como A e AAAA, que contêm endereços IP."
+      },
+      {
+        "text": "No contexto de cópias de segurança, um backup incremental normalmente inclui:",
+        "opts": [
+          "todos os arquivos a cada execução, sem considerar o histórico.",
+          "apenas arquivos presentes na lixeira.",
+          "somente arquivos modificados desde o último backup completo, ignorando outros incrementais.",
+          "dados novos ou alterados desde o último backup realizado, completo ou incremental."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "D",
+        "exp": "O incremental considera alterações desde o backup mais recente da cadeia."
+      },
+      {
+        "text": "O princípio da necessidade na LGPD orienta que o tratamento de dados pessoais deve:",
+        "opts": [
+          "abranger todos os dados disponíveis, ainda que irrelevantes.",
+          "ocorrer obrigatoriamente sem informar a finalidade.",
+          "limitar-se ao mínimo necessário para realizar suas finalidades.",
+          "exigir a publicação irrestrita de dados pessoais."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "C",
+        "exp": "O princípio da necessidade prevê minimização dos dados tratados."
+      },
+      {
+        "text": "O princípio da neutralidade de rede, no Marco Civil da Internet, relaciona-se ao dever de:",
+        "opts": [
+          "dar velocidade superior a conteúdos comerciais em todos os casos.",
+          "tratar de forma isonômica os pacotes de dados, ressalvadas as exceções legalmente previstas.",
+          "bloquear todos os protocolos que não sejam HTTP.",
+          "impedir qualquer gerenciamento técnico de tráfego, mesmo nas hipóteses legais."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "B",
+        "exp": "A neutralidade de rede exige tratamento isonômico, com exceções legais específicas."
+      },
+      {
+        "text": "Considere a consulta SQL: SELECT nome FROM clientes WHERE ativo = 1;. Ela retorna:",
+        "opts": [
+          "os nomes dos clientes cujo campo ativo seja igual a 1.",
+          "todos os campos de todos os clientes.",
+          "somente clientes com o nome igual a ativo.",
+          "a exclusão dos clientes inativos."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "A",
+        "exp": "SELECT escolhe as colunas e WHERE filtra as linhas que satisfazem a condição."
+      },
+      {
+        "text": "Em Python, considere: dados = [2, 4]; dados.append(6); print(len(dados)). A saída será:",
+        "opts": [
+          "2",
+          "4",
+          "3",
+          "6"
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "C",
+        "exp": "append adiciona um elemento à lista de dois itens; len retorna 3."
+      },
+      {
+        "text": "Sobre a Lei nº 9.609/1998, a proteção aos direitos relativos a programa de computador:",
+        "opts": [
+          "depende sempre de patente concedida pelo Município.",
+          "exige que o programa seja obrigatoriamente distribuído sem remuneração.",
+          "alcança apenas programas escritos em linguagem de máquina.",
+          "independe de registro para a sua tutela, conforme a lei."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "D",
+        "exp": "A lei assegura proteção ao programa de computador independentemente de registro."
+      }
+    ],
+    "intro": "Texto-base para as questões 1 a 3: Em uma escola, a equipe de tecnologia implantou um sistema de chamados. Antes, as solicitações chegavam por mensagens dispersas; depois, passaram a ser registradas em um formulário único. A mudança não eliminou a necessidade de diálogo: tornou mais fácil identificar prioridades e acompanhar soluções. Quando um chamado é concluído, o usuário avalia o atendimento, e esse retorno orienta melhorias."
+  },
+  {
+    "id": "simulado-pratica-2026",
+    "name": "Simulado de treinamento — Modelo Objetiva",
+    "year": "2026",
+    "count": 40,
+    "options": 4,
+    "gabarito": "comentado (autoral)",
+    "kind": "native",
+    "version": "Simulado 01",
+    "questions": [
+      {
+        "text": "Leia: “A atualização foi adiada porque a equipe identificou incompatibilidade com um aplicativo essencial.” O conectivo “porque” estabelece relação de:",
+        "opts": [
+          "comparação.",
+          "causa.",
+          "condição.",
+          "finalidade."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "B",
+        "exp": "“Porque” introduz a causa do adiamento.\n"
+      },
+      {
+        "text": "Considere: “Os servidores foram atualizados. Essa medida reduziu as falhas.” A expressão “Essa medida” retoma:",
+        "opts": [
+          "a atualização dos servidores.",
+          "as falhas de funcionamento.",
+          "os usuários do sistema.",
+          "a redução do orçamento."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "A",
+        "exp": "A expressão retoma a ação de atualizar os servidores, garantindo coesão.\n"
+      },
+      {
+        "text": "Assinalar a alternativa cuja concordância verbal está CORRETA:",
+        "opts": [
+          "Fazem dois meses que o sistema foi instalado.",
+          "Houveram muitos chamados ontem.",
+          "Existem arquivos duplicados no servidor.",
+          "Deve haverem novas atualizações."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "C",
+        "exp": "O verbo existir concorda com “arquivos”; fazer temporal e haver impessoal ficam no singular.\n"
+      },
+      {
+        "text": "Assinalar a alternativa em que o emprego da crase está CORRETO:",
+        "opts": [
+          "O técnico retornou à sala de manutenção.",
+          "O relatório foi enviado à todos.",
+          "O usuário começou à reiniciar o equipamento.",
+          "O procedimento foi concluído à partir das 14h."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "A",
+        "exp": "A preposição “a” exigida por retornar soma-se ao artigo “a” de “sala”.\n"
+      },
+      {
+        "text": "Em “Embora o equipamento estivesse ligado, não respondia aos comandos”, a oração inicial indica:",
+        "opts": [
+          "consequência.",
+          "comparação.",
+          "concessão.",
+          "explicação."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "C",
+        "exp": "“Embora” introduz ideia concessiva.\n"
+      },
+      {
+        "text": "Assinalar a alternativa em que todas as palavras estão grafadas CORRETAMENTE:",
+        "opts": [
+          "excessão – privilégio – análise.",
+          "exceção – previlégio – análise.",
+          "exceção – privilégio – análise.",
+          "exceção – privilégio – análize."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "C",
+        "exp": "Grafias corretas: exceção, privilégio, análise.\n"
+      },
+      {
+        "text": "No período “Os técnicos entregaram os computadores aos professores”, o termo “aos professores” exerce a função de:",
+        "opts": [
+          "sujeito.",
+          "objeto indireto.",
+          "predicativo do sujeito.",
+          "adjunto adnominal."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "B",
+        "exp": "Entregar algo a alguém: “os computadores” objeto direto e “aos professores” indireto.\n"
+      },
+      {
+        "text": "Assinalar a alternativa em que a pontuação está adequada à norma-padrão:",
+        "opts": [
+          "Após a manutenção, o laboratório foi liberado.",
+          "Após a manutenção o, laboratório foi liberado.",
+          "Após, a manutenção o laboratório foi liberado.",
+          "Após a manutenção, o laboratório, foi liberado."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "A",
+        "exp": "Vírgula separa adjunto adverbial antecipado; não se separa sujeito do verbo.\n"
+      },
+      {
+        "text": "Em “A rede está lenta como uma tartaruga”, ocorre a figura de linguagem denominada:",
+        "opts": [
+          "metáfora, sem conectivo.",
+          "comparação.",
+          "eufemismo.",
+          "metonímia."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "B",
+        "exp": "O conectivo “como” estabelece comparação explícita.\n"
+      },
+      {
+        "text": "Na frase “É necessário que todos preencham o formulário”, a oração destacada por “que” é:",
+        "opts": [
+          "subordinada substantiva subjetiva.",
+          "coordenada explicativa.",
+          "subordinada adjetiva restritiva.",
+          "subordinada adverbial final."
+        ],
+        "s": "Língua Portuguesa",
+        "answer": "A",
+        "exp": "A oração “que todos preencham o formulário” funciona como sujeito de “é necessário”.\n"
+      },
+      {
+        "text": "Um equipamento de R$ 2.400,00 recebeu desconto de 15%. Seu preço final será:",
+        "opts": [
+          "R$ 1.960,00.",
+          "R$ 2.040,00.",
+          "R$ 2.160,00.",
+          "R$ 2.250,00."
+        ],
+        "s": "Matemática",
+        "answer": "B",
+        "exp": "2.400 × 0,85 = 2.040.\n"
+      },
+      {
+        "text": "Se 3 técnicos instalam 18 computadores em 6 horas, mantendo produtividade igual, 2 técnicos instalam 12 computadores em:",
+        "opts": [
+          "3 horas.",
+          "4 horas.",
+          "6 horas.",
+          "9 horas."
+        ],
+        "s": "Matemática",
+        "answer": "C",
+        "exp": "Taxa: 18/(3×6)=1 equipamento/técnico/hora; 12/(2×1)=6 horas.\n"
+      },
+      {
+        "text": "O conjunto A = {1, 2, 3, 5} e B = {2, 4, 5, 6}. A interseção A ∩ B é:",
+        "opts": [
+          "{1, 3}.",
+          "{2, 5}.",
+          "{1, 2, 3, 4, 5, 6}.",
+          "{4, 6}."
+        ],
+        "s": "Matemática",
+        "answer": "B",
+        "exp": "Interseção contém apenas elementos comuns aos dois conjuntos.\n"
+      },
+      {
+        "text": "A solução da equação 3(x − 2) + 4 = 2x + 9 é:",
+        "opts": [
+          "7.",
+          "9.",
+          "11.",
+          "13."
+        ],
+        "s": "Matemática",
+        "answer": "C",
+        "exp": "3x−6+4=2x+9; logo x=11.\n"
+      },
+      {
+        "text": "Uma sala retangular mede 8 m por 5 m. Seu perímetro é:",
+        "opts": [
+          "13 m.",
+          "26 m.",
+          "40 m.",
+          "80 m."
+        ],
+        "s": "Matemática",
+        "answer": "B",
+        "exp": "P=2(8+5)=26 metros.\n"
+      },
+      {
+        "text": "Na progressão aritmética (4, 7, 10, 13, ...), o 10º termo é:",
+        "opts": [
+          "28.",
+          "30.",
+          "31.",
+          "34."
+        ],
+        "s": "Matemática",
+        "answer": "C",
+        "exp": "a10 = 4 + 9×3 = 31.\n"
+      },
+      {
+        "text": "Uma senha é formada por dois algarismos diferentes, escolhidos entre 1, 2, 3 e 4, e a ordem importa. Quantas senhas podem ser formadas?",
+        "opts": [
+          "6.",
+          "8.",
+          "12.",
+          "16."
+        ],
+        "s": "Matemática",
+        "answer": "C",
+        "exp": "São 4 opções para a primeira posição e 3 para a segunda: 12.\n"
+      },
+      {
+        "text": "Aplicando R$ 1.000,00 a juros simples de 2% ao mês, durante 5 meses, o montante será:",
+        "opts": [
+          "R$ 1.020,00.",
+          "R$ 1.050,00.",
+          "R$ 1.100,00.",
+          "R$ 1.200,00."
+        ],
+        "s": "Matemática",
+        "answer": "C",
+        "exp": "Juros = 1.000×0,02×5 = 100; montante = 1.100.\n"
+      },
+      {
+        "text": "Em relação à segurança do trabalho e ao atendimento ao público, assinalar a conduta MAIS adequada:",
+        "opts": [
+          "Compartilhar senhas para agilizar atendimentos.",
+          "Ignorar relatos de risco para evitar atrasos.",
+          "Registrar ocorrências com clareza e tratar usuários com respeito.",
+          "Expor dados pessoais de usuários em grupo público."
+        ],
+        "s": "Conhecimentos Gerais",
+        "answer": "C",
+        "exp": "Registro claro e respeito atendem aos deveres de ética e segurança.\n"
+      },
+      {
+        "text": "O phishing é uma ameaça caracterizada principalmente por:",
+        "opts": [
+          "criar cópias locais automáticas do sistema.",
+          "induzir a vítima a fornecer dados por mensagens ou páginas fraudulentas.",
+          "impedir fisicamente o funcionamento do monitor.",
+          "ampliar a capacidade da memória RAM."
+        ],
+        "s": "Conhecimentos Gerais",
+        "answer": "B",
+        "exp": "Phishing utiliza fraude e engenharia social para obter informações.\n"
+      },
+      {
+        "text": "No Microsoft Excel, a fórmula =SOMA(A1:A3), quando A1=2, A2=5 e A3=8, retorna:",
+        "opts": [
+          "8.",
+          "10.",
+          "13.",
+          "15."
+        ],
+        "s": "Conhecimentos Gerais",
+        "answer": "D",
+        "exp": "A função SOMA adiciona os valores: 2+5+8=15.\n"
+      },
+      {
+        "text": "Sobre ferramentas de IA no ambiente profissional, analisar as afirmativas: I. A saída de uma IA pode conter erros. II. Informações sensíveis devem ser tratadas conforme as políticas de segurança. III. Todo texto gerado por IA dispensa revisão humana. Está(ão) CORRETA(S):",
+        "opts": [
+          "Somente I.",
+          "Somente I e II.",
+          "Somente II e III.",
+          "I, II e III."
+        ],
+        "s": "Conhecimentos Gerais",
+        "answer": "B",
+        "exp": "IA pode falhar, exige revisão e cautela com dados sensíveis.\n"
+      },
+      {
+        "text": "No correio eletrônico, o campo “Cco” é utilizado para:",
+        "opts": [
+          "anexar arquivos comprimidos automaticamente.",
+          "mostrar a lista de todos os destinatários.",
+          "enviar cópia a destinatários não exibidos aos demais.",
+          "confirmar que o destinatário leu a mensagem."
+        ],
+        "s": "Conhecimentos Gerais",
+        "answer": "C",
+        "exp": "Cco significa cópia carbono oculta.\n"
+      },
+      {
+        "text": "O desenvolvimento sustentável pressupõe:",
+        "opts": [
+          "satisfação das necessidades atuais, considerando as gerações futuras.",
+          "esgotamento dos recursos naturais para acelerar a economia.",
+          "substituição integral de toda atividade econômica.",
+          "eliminação de toda tecnologia de produção."
+        ],
+        "s": "Conhecimentos Gerais",
+        "answer": "A",
+        "exp": "Integra necessidades atuais com preservação de condições para o futuro.\n"
+      },
+      {
+        "text": "Nos termos do art. 1º da Constituição Federal, constitui fundamento da República Federativa do Brasil:",
+        "opts": [
+          "dignidade da pessoa humana.",
+          "censura prévia.",
+          "vitaliciedade de todos os agentes políticos.",
+          "supremacia de um estado sobre outro."
+        ],
+        "s": "Legislação",
+        "answer": "A",
+        "exp": "A dignidade da pessoa humana é fundamento expresso do art. 1º, III.\n"
+      },
+      {
+        "text": "Conforme o art. 5º da Constituição Federal, são invioláveis, nos termos previstos na Constituição, os direitos à:",
+        "opts": [
+          "vida, liberdade, igualdade, segurança e propriedade.",
+          "propriedade, apenas.",
+          "liberdade, excluída a igualdade.",
+          "segurança, excluída a liberdade."
+        ],
+        "s": "Legislação",
+        "answer": "A",
+        "exp": "A alternativa reproduz o elenco de direitos do caput do art. 5º.\n"
+      },
+      {
+        "text": "De acordo com o art. 37 da Constituição Federal, os princípios expressos da administração pública são:",
+        "opts": [
+          "legalidade, impessoalidade, moralidade, publicidade e eficiência.",
+          "legalidade, pessoalidade, sigilo, publicidade e eficiência.",
+          "autonomia, publicidade, eficiência, hierarquia e sigilo.",
+          "igualdade, hierarquia, sigilo, impunidade e moralidade."
+        ],
+        "s": "Legislação",
+        "answer": "A",
+        "exp": "São os princípios expressos no caput do art. 37 (LIMPE).\n"
+      },
+      {
+        "text": "A Constituição Federal, em seu art. 18, dispõe que a organização político-administrativa da República compreende:",
+        "opts": [
+          "União e Estados apenas.",
+          "União, Estados, Distrito Federal e Municípios, todos autônomos nos termos da Constituição.",
+          "Municípios subordinados diretamente aos Estados, sem autonomia.",
+          "apenas União e Municípios."
+        ],
+        "s": "Legislação",
+        "answer": "B",
+        "exp": "A autonomia dos quatro entes é expressa no art. 18.\n"
+      },
+      {
+        "text": "Segundo o art. 30, I, da Constituição Federal, compete aos Municípios:",
+        "opts": [
+          "declarar guerra.",
+          "emitir moeda.",
+          "legislar sobre assuntos de interesse local.",
+          "manter relações diplomáticas."
+        ],
+        "s": "Legislação",
+        "answer": "C",
+        "exp": "O art. 30, I, atribui aos municípios legislação sobre interesse local.\n"
+      },
+      {
+        "text": "Conforme o art. 127 da Constituição Federal, o Ministério Público é instituição:",
+        "opts": [
+          "temporária e subordinada ao Poder Executivo.",
+          "permanente, essencial à função jurisdicional do Estado.",
+          "destinada exclusivamente à consultoria jurídica do prefeito.",
+          "responsável por julgar recursos de tribunais."
+        ],
+        "s": "Legislação",
+        "answer": "B",
+        "exp": "O art. 127 define o MP como instituição permanente, essencial à função jurisdicional.\n"
+      },
+      {
+        "text": "Em redes TCP/IP, o serviço responsável por traduzir nomes de domínio em endereços IP é:",
+        "opts": [
+          "DHCP.",
+          "DNS.",
+          "SMTP.",
+          "FTP."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "B",
+        "exp": "DNS resolve nomes de domínio para endereços IP.\n"
+      },
+      {
+        "text": "Uma rede IPv4 utiliza a máscara 255.255.255.192. Quantos endereços IPv4 existem em cada sub-rede?",
+        "opts": [
+          "32.",
+          "62.",
+          "64.",
+          "128."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "C",
+        "exp": "Máscara /26 deixa 6 bits de host, portanto 2^6=64 endereços (62 hosts utilizáveis em rede tradicional).\n"
+      },
+      {
+        "text": "No Linux, o comando utilizado para alterar permissões de arquivos é:",
+        "opts": [
+          "chmod.",
+          "ping.",
+          "mkdir.",
+          "grep."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "A",
+        "exp": "chmod modifica as permissões de acesso.\n"
+      },
+      {
+        "text": "Considere: I. O RAID 1 utiliza espelhamento. II. RAID 0, isoladamente, garante redundância dos dados. III. Backup externo é dispensável sempre que RAID estiver configurado. Está(ão) CORRETA(S):",
+        "opts": [
+          "Somente I.",
+          "Somente I e II.",
+          "Somente II e III.",
+          "I, II e III."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "A",
+        "exp": "RAID 1 espelha; RAID 0 não oferece redundância e RAID não substitui backups.\n"
+      },
+      {
+        "text": "Uma tabela “usuarios” possui campos id e nome. Qual comando SQL seleciona apenas os nomes?",
+        "opts": [
+          "SELECT nome FROM usuarios;",
+          "GET nome IN usuarios;",
+          "SHOW nome OF usuarios;",
+          "UPDATE nome FROM usuarios;"
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "A",
+        "exp": "SELECT nome FROM usuarios é a sintaxe adequada.\n"
+      },
+      {
+        "text": "Em Python, qual resultado é produzido por `sum([2, 4, 6])`?",
+        "opts": [
+          "3.",
+          "6.",
+          "12.",
+          "[2, 4, 6]."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "C",
+        "exp": "sum soma os elementos do iterável: 2+4+6=12.\n"
+      },
+      {
+        "text": "No HTML, qual elemento é semanticamente destinado a criar um link?",
+        "opts": [
+          "<p>.",
+          "<a>.",
+          "<div>.",
+          "<span>."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "B",
+        "exp": "O elemento âncora <a> representa hiperlinks.\n"
+      },
+      {
+        "text": "Um usuário recebe mensagem com link solicitando senha institucional. A ação MAIS segura é:",
+        "opts": [
+          "clicar e informar a senha para evitar bloqueio.",
+          "encaminhar a senha ao remetente por outra mensagem.",
+          "verificar a autenticidade por canal oficial e não fornecer credenciais.",
+          "desativar o antivírus antes de abrir o link."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "C",
+        "exp": "Verificação independente e não divulgação de credenciais reduzem risco de phishing.\n"
+      },
+      {
+        "text": "Segundo a LGPD (Lei nº 13.709/2018), um dado pessoal é informação relacionada a:",
+        "opts": [
+          "apenas organizações e empresas.",
+          "pessoa natural identificada ou identificável.",
+          "unicamente dados já publicados na internet.",
+          "informação técnica sem relação com pessoas."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "B",
+        "exp": "A definição legal de dado pessoal está no art. 5º, I, da LGPD.\n"
+      },
+      {
+        "text": "Sobre virtualização, assinalar a alternativa CORRETA:",
+        "opts": [
+          "Máquina virtual exige obrigatoriamente um computador físico exclusivo para cada instância.",
+          "Hipervisor permite executar e gerenciar máquinas virtuais em um host.",
+          "Virtualização elimina a necessidade de sistemas operacionais.",
+          "Máquina virtual não utiliza memória do equipamento hospedeiro."
+        ],
+        "s": "Conhecimentos Específicos",
+        "answer": "B",
+        "exp": "O hipervisor gerencia recursos e instâncias virtuais.\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1342 @@
+{
+  "version": 1,
+  "scope": "Comentários autorais para os cadernos enviados; gabaritos preservados do catálogo. Legislação histórica pode estar desatualizada.",
+  "exams": {
+    "guaraniacu-2024": [
+      {
+        "question": 1,
+        "explanation": "A forma verbal exige crase na expressão indicada; “extraordinário” escreve-se sem hífen e o plural de “obra-prima” é “obras-primas”, flexionando os dois elementos."
+      },
+      {
+        "question": 2,
+        "explanation": "No contexto, “abrange” significa incluir ou compreender algo dentro de um conjunto; as outras palavras alterariam a relação de sentido."
+      },
+      {
+        "question": 3,
+        "explanation": "A ordem é E–E–C: o primeiro livro não foi o romance citado; a criação da Academia não foi iniciativa exclusiva dele; e a trajetória profissional incluiu atividade de revisão."
+      },
+      {
+        "question": 4,
+        "explanation": "O texto apresenta acontecimentos da vida de uma pessoa, caracterizando uma biografia; na classificação adotada pela questão, predomina a sequência narrativa."
+      },
+      {
+        "question": 5,
+        "explanation": "O nome da cidade de Londres, sem determinante, normalmente não aceita artigo feminino; portanto, “a Londres” não recebe crase. Nas locuções femininas indicadas, o uso do acento é possível ou obrigatório conforme o contexto."
+      },
+      {
+        "question": 6,
+        "explanation": "A frase apresenta causa ou explicação e pede “porque” junto, sem acento; “por que” separado não corresponde à função empregada nessa frase."
+      },
+      {
+        "question": 7,
+        "explanation": "São três aumentativos: “festança”, “filhão” e “panelão”; as terminações e o sentido expressivo ajudam a identificá-los."
+      },
+      {
+        "question": 8,
+        "explanation": "“Abacaxi” é oxítona (última sílaba tônica), “hífen” é paroxítona (penúltima) e “técnico” é proparoxítona (antepenúltima)."
+      },
+      {
+        "question": 9,
+        "explanation": "O possessivo “seu” pode referir-se a mais de uma pessoa no diálogo, gerando duas interpretações para a quem pertence o livro."
+      },
+      {
+        "question": 10,
+        "explanation": "“Enfarto” é forma dicionarizada; as grafias corretas das demais palavras são “advogado”, “empecilho” e “bicarbonato”."
+      },
+      {
+        "question": 11,
+        "explanation": "A produção por hora é 600 ÷ (4 × 3) = 50 peças. Em 9 dias de 6 horas: 50 × 6 × 9 = 2.700 peças."
+      },
+      {
+        "question": 12,
+        "explanation": "Se 36% são homens, 64% são mulheres. Assim, 0,64 × 500 = 320 participantes."
+      },
+      {
+        "question": 13,
+        "explanation": "A alternativa pressupõe juros simples: M = 6.500 × (1 + 0,025 × 8) = R$ 7.800. O enunciado não explicita o regime de capitalização; confira essa premissa."
+      },
+      {
+        "question": 14,
+        "explanation": "A taxa é 21/90 questão por minuto. Em 240 minutos, a projeção é 21 × 240 ÷ 90 = 56 questões, isto é, mais de 55 e menos de 60."
+      },
+      {
+        "question": 15,
+        "explanation": "Pelo princípio multiplicativo, há quatro escolhas para o primeiro trecho e seis para o segundo: 4 × 6 = 24 trajetos distintos."
+      },
+      {
+        "question": 16,
+        "explanation": "Área da sala: 3 × 2,5 = 7,5 m². Área do tapete: 2 × 1,7 = 3,4 m². Diferença: 4,1 m²."
+      },
+      {
+        "question": 17,
+        "explanation": "Trata-se de uma PA: a12 = a1 + 11r = 4.000 + 11 × 250 = 6.750 chips no 12º dia."
+      },
+      {
+        "question": 18,
+        "explanation": "Média ponderada: (7 × 1 + 3,5 × 2 + 4 × 3 + x × 4)/10 = 6. Logo, 26 + 4x = 60 e x = 8,5."
+      },
+      {
+        "question": 19,
+        "explanation": "Casos graves de dengue podem apresentar manifestações neurológicas, incluindo convulsões; as demais opções são sintomas gerais e não sinais distintivos de gravidade."
+      },
+      {
+        "question": 20,
+        "explanation": "Gás natural é combustível fóssil, portanto fonte não renovável; vento, biomassa e energia da água são fontes renováveis."
+      },
+      {
+        "question": 21,
+        "explanation": "As duas primeiras afirmações são compatíveis com o desenvolvimento sustentável. Industrializar, por si só, não garante segurança alimentar sem impactos ambientais: C–C–E."
+      },
+      {
+        "question": 22,
+        "explanation": "A capacidade de aprender padrões e apoiar planejamento e decisões caracteriza a inteligência artificial, não as denominações fictícias das outras opções."
+      },
+      {
+        "question": 23,
+        "explanation": "A RAM é memória volátil de trabalho, onde ficam temporariamente instruções e dados em uso pela CPU; armazenamento permanente é função de outros dispositivos."
+      },
+      {
+        "question": 24,
+        "explanation": "A reinicialização encerra processos e inicia novamente o sistema sem o ciclo habitual de desligamento físico completo; não preserva aplicativos abertos nem dados não salvos. A vantagem de velocidade depende da configuração do equipamento."
+      },
+      {
+        "question": 25,
+        "explanation": "A maioria absoluta do primeiro turno considera apenas votos válidos; se necessário, o segundo turno ocorre no prazo constitucional, não imediatamente. Por isso, as duas partes estão erradas."
+      },
+      {
+        "question": 26,
+        "explanation": "Segundo a Lei Orgânica usada nessa prova, a edição de normas sobre elaboração e consolidação das leis é matéria de lei complementar. É uma regra local, não a ser transferida automaticamente a Novo Cabrais."
+      },
+      {
+        "question": 27,
+        "explanation": "Iniciativa popular, referendo e plebiscito são mecanismos de exercício direto da soberania popular, ao lado da representação política: os três itens estão corretos."
+      },
+      {
+        "question": 28,
+        "explanation": "No estatuto municipal citado, o provimento dos cargos compete ao Executivo e se formaliza por decreto; resoluções e moções não são o instrumento indicado."
+      },
+      {
+        "question": 29,
+        "explanation": "O gabarito remete à redação histórica da lei municipal daquela prova (70 anos). Não memorize essa idade como regra geral atual: as normas previdenciárias podem ter sido alteradas e devem ser conferidas na lei exigida em Novo Cabrais."
+      },
+      {
+        "question": 30,
+        "explanation": "Restrição de liberdade é sanção penal ou medida judicial, não penalidade administrativa disciplinar prevista no rol estatutário citado."
+      },
+      {
+        "question": 31,
+        "explanation": "A semelhança inevitável por características funcionais ou exigências técnicas não constitui ofensa (item III). A lei não autoriza várias cópias indiscriminadas nem citação integral do programa como exceção geral."
+      },
+      {
+        "question": 32,
+        "explanation": "O Código Penal dispensa representação em estelionato contra a Administração Pública direta ou indireta, hipótese de ação penal pública incondicionada."
+      },
+      {
+        "question": 33,
+        "explanation": "A LGPD reconhece a titularidade dos dados pessoais e assegura direitos fundamentais de liberdade, intimidade e privacidade; a palavra jurídica adequada é “direitos”."
+      },
+      {
+        "question": 34,
+        "explanation": "DHCP distribui automaticamente endereços IP e parâmetros de rede; DNS resolve nomes, NTP sincroniza horários e SMB viabiliza compartilhamento de arquivos."
+      },
+      {
+        "question": 35,
+        "explanation": "A memória cache mantém dados e instruções frequentemente acessados perto do processador, reduzindo a latência; é rápida e volátil."
+      },
+      {
+        "question": 36,
+        "explanation": "Herança, polimorfismo, encapsulamento e abstração são princípios centrais de programação orientada a objetos."
+      },
+      {
+        "question": 37,
+        "explanation": "JSON é uma notação textual estruturada para representar e trocar dados; não é linguagem de programação, SGBD ou ferramenta de desenvolvimento."
+      },
+      {
+        "question": 38,
+        "explanation": "Biometria autentica mediante características físicas ou comportamentais; senha e token pertencem a outros fatores de autenticação."
+      },
+      {
+        "question": 39,
+        "explanation": "Políticas, processos e tecnologias voltados a preservar sistemas e informações compõem a segurança da informação."
+      },
+      {
+        "question": 40,
+        "explanation": "Microsoft Defender reúne recursos de proteção contra ameaças em identidades, endpoints, e-mail e aplicações. A identificação da solução X depende também do diagrama apresentado na página original."
+      }
+    ],
+    "santa-leopoldina-2024": [
+      {
+        "question": 1,
+        "explanation": "A questão pede a afirmação incorreta: o número nacional divulgado para o atendimento da instituição é 188, não 141. As outras descrições correspondem ao texto-base."
+      },
+      {
+        "question": 2,
+        "explanation": "A conjunção destacada introduz oposição ao argumento anterior; “contudo” mantém essa relação adversativa."
+      },
+      {
+        "question": 3,
+        "explanation": "“Filantrópico” relaciona-se a ação humanitária e “ostensiva”, a divulgação visível ou evidente; as outras combinações deslocam o sentido."
+      },
+      {
+        "question": 4,
+        "explanation": "O pronome retoma a ideia imediatamente desenvolvida: a escuta atenciosa oferecida pelo tempo necessário, e não um substantivo isolado distante."
+      },
+      {
+        "question": 5,
+        "explanation": "“Embora” expressa concessão; “mais ... do que” estabelece comparação entre os termos da frase."
+      },
+      {
+        "question": 6,
+        "explanation": "Chamar metaforicamente o motorista de “tartaruga” atribui-lhe lentidão sem empregar termo comparativo explícito; “como” indicaria comparação."
+      },
+      {
+        "question": 7,
+        "explanation": "“Senão” junto significa “caso contrário”. As demais frases apresentam problemas de concordância/regência ou uso de “porquê”."
+      },
+      {
+        "question": 8,
+        "explanation": "“Portanto” e “no entanto” são conectivos invariáveis; o substantivo composto e o adjetivo admitem flexão: 2–1–1–2."
+      },
+      {
+        "question": 9,
+        "explanation": "“Pegar fogo” e “bateria da criança” são usos figurados; sentir a brisa do mar é emprego literal: 2–2–1."
+      },
+      {
+        "question": 10,
+        "explanation": "No sentido de ver, “assistir” rege “a”; “obedecer” também pede preposição “a”; “visar”, com sentido de objetivar, admite a regência apresentada: E–E–C."
+      },
+      {
+        "question": 11,
+        "explanation": "30% de R$ 3.200 equivale a 3.200 × 0,30 = R$ 960."
+      },
+      {
+        "question": 12,
+        "explanation": "Quatro docentes corrigem 80 provas em duas horas: 10 provas por professor/hora. Para 120 em 1,5 hora, são necessários 120/(10 × 1,5) = 8 docentes."
+      },
+      {
+        "question": 13,
+        "explanation": "PA: a8 = 13 + 7 × 12 = 97; soma S8 = 8 × (13 + 97)/2 = 440."
+      },
+      {
+        "question": 14,
+        "explanation": "A área da parte C deve ser obtida pela fração indicada no desenho; a alternativa informada pela banca é 1.000 m² e perímetro 130 m. A conferência exata exige observar as dimensões na figura do caderno."
+      },
+      {
+        "question": 15,
+        "explanation": "A soma original é 6 × 3.000 = 18.000; com dois salários de 3.500, passa a 25.000. Média: 25.000/8 = R$ 3.125."
+      },
+      {
+        "question": 16,
+        "explanation": "Em juros compostos, M = 3.000 × (1,10)^3 = R$ 3.993."
+      },
+      {
+        "question": 17,
+        "explanation": "CANECA tem 6 letras, com A repetido duas vezes e C repetido duas vezes: 6!/(2! × 2!) = 180 anagramas."
+      },
+      {
+        "question": 18,
+        "explanation": "Se hoje é sábado, anteontem foi quinta e daqui a três dias será terça: ambos são dias em que a pessoa trabalha na recepção."
+      },
+      {
+        "question": 19,
+        "explanation": "O avanço das telecomunicações e da circulação de informações favoreceu a integração global de economias e sociedades."
+      },
+      {
+        "question": 20,
+        "explanation": "A moeda oficial da Argentina é o peso argentino; dólar, bolívar e iene pertencem a outras economias."
+      },
+      {
+        "question": 21,
+        "explanation": "Ética exige honestidade, responsabilidade e respeito inclusive sem fiscalização; mera aparência de integridade não configura conduta ética."
+      },
+      {
+        "question": 22,
+        "explanation": "Projetor é periférico de saída que envia imagem para uma superfície externa; webcam capta imagens, não as projeta."
+      },
+      {
+        "question": 23,
+        "explanation": "No Windows, tecla Windows + seta para cima maximiza a janela ativa; seta para baixo normalmente restaura ou minimiza."
+      },
+      {
+        "question": 24,
+        "explanation": "“Ideias” não é grupo tradicional da guia Layout da Página do Excel 2019; os demais grupos citados pertencem a essa guia."
+      },
+      {
+        "question": 25,
+        "explanation": "O tribunal do júri assegura plenitude de defesa e sigilo das votações; julga crimes dolosos contra a vida, não culposos: C–E–E."
+      },
+      {
+        "question": 26,
+        "explanation": "A Constituição reconhece convenções e acordos coletivos de trabalho. Por isso, é falsa a negativa contida na alternativa indicada."
+      },
+      {
+        "question": 27,
+        "explanation": "Regularidade, eficiência e continuidade são critérios de prestação de serviços públicos; “dispensabilidade” não integra esse rol."
+      },
+      {
+        "question": 28,
+        "explanation": "A questão remete à lei municipal de Santa Leopoldina, que atribui a regulamentação indicada a decreto do Executivo. Não confunda com as regras de Novo Cabrais."
+      },
+      {
+        "question": 29,
+        "explanation": "A alternativa incorreta exige 21 anos como idade mínima; o estatuto citado não estabelece esse patamar como requisito geral de investidura."
+      },
+      {
+        "question": 30,
+        "explanation": "Reversão é o retorno à atividade de servidor aposentado quando cessam os motivos que justificaram a aposentadoria, observadas as regras legais."
+      },
+      {
+        "question": 31,
+        "explanation": "A obtenção, pela invasão, de conteúdo de comunicações eletrônicas privadas configura hipótese qualificadora prevista no art. 154-A do Código Penal."
+      },
+      {
+        "question": 32,
+        "explanation": "O Marco Civil inclui proteção da privacidade e neutralidade de rede, não publicação de dados pessoais nem comprometimento da neutralidade. Apenas I é verdadeiro."
+      },
+      {
+        "question": 33,
+        "explanation": "A autoridade pode definir padrões de interoperabilidade e segurança; a possibilidade de exigir relatório de impacto não exclui, genericamente, dados pessoais sensíveis. Só a primeira parte está correta."
+      },
+      {
+        "question": 34,
+        "explanation": "A tag HTML <rp> oferece parênteses ou marcação alternativa quando o navegador não suporta anotações ruby; <rt> indica o texto da anotação."
+      },
+      {
+        "question": 35,
+        "explanation": "O comando `git add arquivo` coloca mudanças na área de staging; `git commit` registra e `git push` envia commits ao remoto."
+      },
+      {
+        "question": 36,
+        "explanation": "Na criptografia simétrica, a mesma chave secreta é usada para cifrar e decifrar; na assimétrica emprega-se um par de chaves."
+      },
+      {
+        "question": 37,
+        "explanation": "A imagem corresponde a um módulo de memória RAM; sua função é manter dados de trabalho temporários e não o armazenamento permanente."
+      },
+      {
+        "question": 38,
+        "explanation": "`.mp4` é extensão de contêiner multimídia usado para vídeo; `.mp3` é áudio, `.jpg` é imagem e `.zip` é arquivo compactado."
+      },
+      {
+        "question": 39,
+        "explanation": "Backup incremental copia somente os dados alterados desde o backup anterior relevante, reduzindo volume, mas podendo exigir múltiplas etapas na restauração."
+      },
+      {
+        "question": 40,
+        "explanation": "Imagem Docker é modelo imutável em camadas com sistema de arquivos e configurações para criar contêineres; mudanças geram nova imagem/camada, não edição arbitrária da existente."
+      }
+    ],
+    "feas-2024": [
+      {
+        "question": 1,
+        "explanation": "A alternativa assinalada decorre de inferência sobre o perfil socioeconômico associado ao consumo de escargot no texto; diferencie informação deduzida de afirmação literalmente escrita."
+      },
+      {
+        "question": 2,
+        "explanation": "O texto admite experiências positivas e negativas da personagem e distingue espécies quanto ao consumo; não sustenta que toda lesma se tornará escargot. Logo, apenas II e III."
+      },
+      {
+        "question": 3,
+        "explanation": "“Pretensiosos” está corretamente escrito. As outras opções erram “imprescindível”, “opinião” e “discussão”."
+      },
+      {
+        "question": 4,
+        "explanation": "A banca considera adequada a concordância com “tais quais” no contexto da comparação. Nas demais opções, a concordância de “proibida” e “haja vista” ou da expressão de agradecimento exige atenção; confira a redação no caderno."
+      },
+      {
+        "question": 5,
+        "explanation": "Com expressões de quantidade seguidas de “ser”, pode-se manter singular em predicativos como “é suficiente” e “é pouco”; em “Ana e Marcos eram pura alegria”, o sujeito composto exige plural. Os três itens são aceitos."
+      },
+      {
+        "question": 6,
+        "explanation": "Quatro fatias salgadas em ordem, sem repetir, geram 5 × 4 × 3 × 2 = 120 sequências. A última doce tem 2 opções: 120 × 2 = 240."
+      },
+      {
+        "question": 7,
+        "explanation": "As oito letras de OBJETIVA são distintas; arranjos de quatro sem repetição: 8 × 7 × 6 × 5 = 1.680."
+      },
+      {
+        "question": 8,
+        "explanation": "PA: a10 = 5 + 9 × 6 = 59; soma S10 = 10 × (5 + 59)/2 = 320."
+      },
+      {
+        "question": 9,
+        "explanation": "Em juros simples, M = C × (1 + 0,05 × 3) = 1,15C. Assim, C = 575/1,15 = 500 e os juros são R$ 75."
+      },
+      {
+        "question": 10,
+        "explanation": "Diego, que recebeu um múltiplo de 3, fica com o número 3. O único número primo restante é 2, de Antônio; Bento fica com o quadrado perfeito 1 e Carlos recebe o número par 4."
+      },
+      {
+        "question": 11,
+        "explanation": "O prazo indicado pela Lei Municipal específica da FEAS é de 180 dias. É uma regra daquela instituição e não se aplica automaticamente ao concurso de Novo Cabrais."
+      },
+      {
+        "question": 12,
+        "explanation": "Pelo regime da fundação, o Secretário Municipal da Saúde integra o Conselho Curador como membro nato; as outras duas descrições divergem das regras citadas."
+      },
+      {
+        "question": 13,
+        "explanation": "A norma interna citada estabelece 24 horas como limite ordinário e até 48 horas para fins de semana ou feriados; a regra não é geral para outros órgãos."
+      },
+      {
+        "question": 14,
+        "explanation": "As três fontes indicadas integram o patrimônio da fundação segundo seu estatuto: receitas incorporadas, bens e direitos transferidos e bens próprios."
+      },
+      {
+        "question": 15,
+        "explanation": "A Diretoria Executiva responde pela gestão e direção administrativa; o Conselho Curador delibera, controla e fiscaliza: 1–1–2."
+      },
+      {
+        "question": 16,
+        "explanation": "O gabarito preliminar considera suspensão, rescisão por justa causa e sindicância no rol referido. Atenção: sindicância costuma ser instrumento de apuração, não penalidade em sentido estrito; recomenda-se conferir o texto institucional original."
+      },
+      {
+        "question": 17,
+        "explanation": "Suspensão e advertência são sanções disciplinares; rescisão sem justa causa não representa punição disciplinar prevista na regra indicada."
+      },
+      {
+        "question": 18,
+        "explanation": "É correta a relação íntegra e transparente com agentes públicos; doações partidárias e uso político da marca ou de recursos institucionais são vedados: C–E–E."
+      },
+      {
+        "question": 19,
+        "explanation": "Segurança da informação e cuidado com a imagem institucional são diretrizes de integridade; imprudência é comportamento a evitar, não princípio."
+      },
+      {
+        "question": 20,
+        "explanation": "A questão trata do rito sumário conforme decreto local; o gabarito preliminar aceita apuração sumária e julgamento, mas não o item denominado “instrução” na enumeração indicada. Consulte a regulamentação específica para memorizar etapas."
+      },
+      {
+        "question": 21,
+        "explanation": "No Word, Ctrl + seta para a direita desloca o cursor para o início da próxima palavra; não equivale a End ou Ctrl + Home."
+      },
+      {
+        "question": 22,
+        "explanation": "O cooler remove calor de processadores e outros componentes, mantendo a temperatura operacional adequada."
+      },
+      {
+        "question": 23,
+        "explanation": "A tela “Contas” permite alterar a imagem do usuário; configurações de fuso e de calendários pertencem a outras áreas do Windows."
+      },
+      {
+        "question": 24,
+        "explanation": "Tab move a seleção uma coluna à direita, preservando a linha. Pela célula ativa indicada na figura, o resultado é B3."
+      },
+      {
+        "question": 25,
+        "explanation": "Organização no trabalho favorece produtividade, uso do tempo, dimensionamento de espaços e bem-estar; os quatro benefícios podem ocorrer."
+      },
+      {
+        "question": 26,
+        "explanation": "O critério “comunicação” se refere a informações e orientações compreensíveis ao usuário; os outros itens confundem qualidade com aspectos de outras dimensões."
+      },
+      {
+        "question": 27,
+        "explanation": "A NR-17 prevê guarda do relatório de AET por 20 anos. Como normas regulamentadoras podem mudar, confirme a redação vigente se o tema aparecer em prova recente."
+      },
+      {
+        "question": 28,
+        "explanation": "As normas de produção são um dos aspectos da organização do trabalho avaliados pela NR-17; as demais alternativas propõem condições incompatíveis com a norma."
+      },
+      {
+        "question": 29,
+        "explanation": "Em exposição ocupacional a agentes biológicos, deve-se identificar responsáveis e definir medidas de emergência; “desidentificar” responsáveis compromete o plano."
+      },
+      {
+        "question": 30,
+        "explanation": "Higiene das mãos exige lavatório apropriado quando há risco biológico. A presença em quartos de isolamento não é facultativa em termos gerais, e luvas não substituem higienização: apenas I."
+      },
+      {
+        "question": 31,
+        "explanation": "Privacidade, autodeterminação informativa e liberdades de expressão/informação estão entre os fundamentos expressos da LGPD; os três itens procedem."
+      },
+      {
+        "question": 32,
+        "explanation": "A Lei de Acesso à Informação prevê divulgação ativa de informações de interesse geral, independentemente de requerimento; a alternativa incorreta condiciona a publicidade à solicitação."
+      },
+      {
+        "question": 33,
+        "explanation": "A legislação de improbidade manda comunicar indícios ao Ministério Público competente; as opções que ampliam a responsabilidade do herdeiro acima do patrimônio transmitido estão erradas."
+      },
+      {
+        "question": 34,
+        "explanation": "O Marco Civil assegura a manutenção da qualidade de conexão contratada. A proteção das comunicações admite condições legais e abrange também reparação por danos morais."
+      },
+      {
+        "question": 35,
+        "explanation": "Na análise de manifestações de usuários de serviços públicos, devem prevalecer eficiência e celeridade para efetiva resolução."
+      },
+      {
+        "question": 36,
+        "explanation": "O Marco Civil protege intimidade, vida privada, honra e imagem das partes envolvidas direta ou indiretamente no tratamento de registros."
+      },
+      {
+        "question": 37,
+        "explanation": "A proteção de software independe de registro. Os direitos patrimoniais não pertencem sempre ao órgão nem sempre ao servidor: dependem das condições de vínculo e desenvolvimento."
+      },
+      {
+        "question": 38,
+        "explanation": "Switch aprende endereços MAC e encaminha quadros às portas apropriadas; hub repete sinais a todas as portas e aumenta tráfego desnecessário."
+      },
+      {
+        "question": 39,
+        "explanation": "Em base 12, divide-se sucessivamente 1810 por 12 e convertem-se os restos segundo os símbolos próprios da figura; o gabarito preliminar indica a alternativa B. A notação simbólica precisa ser conferida no desenho."
+      },
+      {
+        "question": 40,
+        "explanation": "O endereço IP é identificador lógico usado para localizar interfaces de dispositivos na rede; a exclusividade depende do escopo de endereçamento."
+      },
+      {
+        "question": 41,
+        "explanation": "IaaS entrega recursos de infraestrutura como computação, armazenamento e rede; PaaS oferece plataforma e SaaS, software pronto ao usuário."
+      },
+      {
+        "question": 42,
+        "explanation": "`BETWEEN 18 AND 25` seleciona os limites inclusive; para inteiros, equivale a `idade >= 18 AND idade <= 25`."
+      },
+      {
+        "question": 43,
+        "explanation": "`AVG(salario)` é a função de agregação SQL para média aritmética dos valores não nulos da coluna."
+      },
+      {
+        "question": 44,
+        "explanation": "O processador se encaixa no soquete da placa-mãe, normalmente sob o dissipador e a ventoinha (cooler)."
+      },
+      {
+        "question": 45,
+        "explanation": "Placa de som trata áudio, placa de rede trata comunicação de dados e placa de vídeo trata imagens: sequência 3–1–2."
+      },
+      {
+        "question": 46,
+        "explanation": "Em SQL, `LIKE 'M%'` seleciona textos iniciados com M; `%` representa qualquer sequência de caracteres."
+      },
+      {
+        "question": 47,
+        "explanation": "`LEFT JOIN` preserva todas as linhas da tabela à esquerda (Alunos), preenchendo com NULL os campos sem correspondência na tabela de matrículas."
+      },
+      {
+        "question": 48,
+        "explanation": "DNS traduz nomes de domínio em endereços IP e pode fazer resolução inversa; DHCP é quem concede endereços dinamicamente."
+      },
+      {
+        "question": 49,
+        "explanation": "DHCP automatiza a entrega de endereço IP e de parâmetros como máscara, gateway e servidores DNS aos clientes."
+      },
+      {
+        "question": 50,
+        "explanation": "Malware é programa ou código com finalidade maliciosa, incluindo dano, espionagem ou acesso não autorizado; não designa ferramenta de proteção."
+      },
+      {
+        "question": 51,
+        "explanation": "Vírus infectam arquivos ou hospedeiros e se replicam quando executados; worms costumam propagar-se sem depender de arquivo hospedeiro."
+      },
+      {
+        "question": 52,
+        "explanation": "Vírus de boot afeta inicialização; stealth busca ocultar sua presença; vírus de macro usa macros de documentos ou aplicativos: 1–3–2."
+      },
+      {
+        "question": 53,
+        "explanation": "Trojan disfarça-se de software legítimo ou útil para induzir execução; em geral não se autorreplica como vírus ou worm."
+      },
+      {
+        "question": 54,
+        "explanation": "Encapsulamento oculta detalhes internos e expõe interfaces controladas, reduzindo o acoplamento entre componentes."
+      },
+      {
+        "question": 55,
+        "explanation": "Polimorfismo permite chamar a mesma operação em objetos de tipos distintos, com implementações adequadas a cada classe."
+      },
+      {
+        "question": 56,
+        "explanation": "Herança permite derivar uma classe de outra para reutilizar ou especializar atributos e comportamentos."
+      },
+      {
+        "question": 57,
+        "explanation": "JSON é formato textual de representação e intercâmbio de dados estruturados; não é banco de dados, protocolo nem linguagem executável."
+      },
+      {
+        "question": 58,
+        "explanation": "HTML é linguagem de marcação usada para estruturar documentos web, elementos semânticos, links e mídia; comportamento dinâmico depende de outras tecnologias."
+      },
+      {
+        "question": 59,
+        "explanation": "Em inglês, “easy” significa fácil; “not difficult” preserva o sentido, ao contrário de “laborious”, “complicated” e “challenging”."
+      },
+      {
+        "question": 60,
+        "explanation": "SQL significa Structured Query Language; API significa Application Programming Interface."
+      }
+    ],
+    "dezesseis-2023": [
+      {
+        "question": 1,
+        "explanation": "A alternativa errada mistura referências históricas das festividades com estação e celebração do deus Saturno; a Saturnália romana era vinculada a outro período, não ao alegado solstício de primavera."
+      },
+      {
+        "question": 2,
+        "explanation": "A palavra destacada funciona como advérbio, modificando o sentido de verbo, adjetivo ou outro advérbio. A classificação exata depende do destaque gráfico no caderno original."
+      },
+      {
+        "question": 3,
+        "explanation": "A concordância deve respeitar o núcleo do sujeito em cada lacuna; a sequência aceita pela banca é “carrega / acontecia / duravam”. Confira os sujeitos no texto-base."
+      },
+      {
+        "question": 4,
+        "explanation": "I e II apresentam pontuação adequada. Em III há vírgula indevida entre sujeito e predicado; em IV falta a separação apropriada da oração adverbial inicial."
+      },
+      {
+        "question": 5,
+        "explanation": "“Concerto” (espetáculo) e “conserto” (reparo) têm som semelhante e grafia e sentido diferentes, caracterizando homófonas. Os outros pares não atendem ao critério da questão."
+      },
+      {
+        "question": 6,
+        "explanation": "No fim de pergunta indireta ou direta, usa-se “por quê” separado e com acento; para causa usa-se “porque” e, precedido de artigo, “o porquê”."
+      },
+      {
+        "question": 7,
+        "explanation": "A banca considera incorreta a classificação de “é que” como expressão meramente expletiva nessa construção. O valor sintático depende da análise integral da oração."
+      },
+      {
+        "question": 8,
+        "explanation": "“Órbita” e “pêssego” são proparoxítonas; “café” é oxítona; “galáxia” e “meteorito” são paroxítonas: 3–1–2–3–2."
+      },
+      {
+        "question": 9,
+        "explanation": "O verbo “maquiar” tem conjugação normativa “maquiam” no presente, não a forma indicada na alternativa D, considerada incorreta pela banca."
+      },
+      {
+        "question": 10,
+        "explanation": "“Alcateia” é grafada sem acento pelo acordo ortográfico; as outras opções deveriam ser “antissocial”, “micro-organismos” e “consequência”."
+      },
+      {
+        "question": 11,
+        "explanation": "Se A + J = 38 e 3A − J = 14, somando as equações: 4A = 52, A = 13 e J = 25."
+      },
+      {
+        "question": 12,
+        "explanation": "Juros = 1.896 − 1.580 = 316. Em 5 meses, i = 316/(1.580 × 5) = 0,04 = 4% ao mês."
+      },
+      {
+        "question": 13,
+        "explanation": "Área de quadrado = lado²; logo 5² = 25 m²."
+      },
+      {
+        "question": 14,
+        "explanation": "9% de 2.500 = 0,09 × 2.500 = 225 candidatos."
+      },
+      {
+        "question": 15,
+        "explanation": "Princípio multiplicativo: 5 camisas × 2 calças × 4 sapatos × 3 relógios = 120 combinações."
+      },
+      {
+        "question": 16,
+        "explanation": "A sequência alterna multiplicação por 3 e subtração de 5: 97 × 3 = 291."
+      },
+      {
+        "question": 17,
+        "explanation": "Se o estoque inicial é x, a compra é 3x; após venda de 58, 4x − 58 = 214, então x = 68 e a compra foi de 204 unidades."
+      },
+      {
+        "question": 18,
+        "explanation": "Moda é o valor mais frequente. Nas 15 notas, 8,0 aparece mais vezes que os demais números."
+      },
+      {
+        "question": 19,
+        "explanation": "O desmatamento reduz biodiversidade, degrada o solo e altera ciclos hídricos e climáticos; os três impactos estão corretos."
+      },
+      {
+        "question": 20,
+        "explanation": "A Lei da Ficha Limpa trata de inelegibilidade e requisitos para candidaturas, portanto se relaciona principalmente ao Direito Eleitoral."
+      },
+      {
+        "question": 21,
+        "explanation": "O processador executa instruções, mas não conecta fisicamente todos os periféricos; placa de rede fornece conectividade; BIOS/firmware não é o armazenamento geral permanente dos dados do usuário: E–C–E."
+      },
+      {
+        "question": 22,
+        "explanation": "No Excel brasileiro, a fórmula inicia com `=` e `SOMA` aceita argumentos separados por ponto e vírgula; o resultado numérico é 19,75."
+      },
+      {
+        "question": 23,
+        "explanation": "O ícone do caderno identifica o Painel de Controle, ferramenta tradicional de configurações do Windows. Confirme a figura caso esteja usando outro tema visual."
+      },
+      {
+        "question": 24,
+        "explanation": "Perda auditiva associada à exposição contínua a ruído no trabalho é exemplo típico de doença ocupacional; doença degenerativa ou decorrente somente da idade não é automaticamente ocupacional."
+      },
+      {
+        "question": 25,
+        "explanation": "A competência municipal compartilhada inclui proteção da saúde, higiene e assistência; desestimular educação ou desamparar pessoas contraria essa competência. Somente II."
+      },
+      {
+        "question": 26,
+        "explanation": "Pela Lei Orgânica citada, resoluções e leis ordinárias integram o processo legislativo municipal; medida provisória não integra o rol local indicado: E–C–C."
+      },
+      {
+        "question": 27,
+        "explanation": "O gabarito preliminar indica o item II conforme a redação da lei local. A formulação do enunciado exige conferência da norma de origem, pois a responsabilidade normalmente envolve atentar contra o livre exercício dos direitos e poderes, não o próprio exercício."
+      },
+      {
+        "question": 28,
+        "explanation": "No estatuto municipal daquela prova, recondução e exoneração figuram como hipóteses de vacância; nomeação é provimento e aproveitamento é forma de retorno ao exercício."
+      },
+      {
+        "question": 29,
+        "explanation": "Diárias e ajuda de custo possuem natureza indenizatória para compensar despesas funcionais; auxílio-funeral tem tratamento distinto no estatuto citado."
+      },
+      {
+        "question": 30,
+        "explanation": "Lealdade institucional e cumprimento de ordens legais são deveres; recusar fé a documentos públicos e manifestações inadequadas no expediente são proibições: 1–2–2–1."
+      },
+      {
+        "question": 31,
+        "explanation": "Conflito intrapessoal surge dentro da própria pessoa, envolvendo dificuldades ou tensões pessoais que podem repercutir nas relações com os colegas."
+      },
+      {
+        "question": 32,
+        "explanation": "A figura numerada 3 corresponde ao módulo de memória RAM, componente de memória volátil instalado na placa-mãe."
+      },
+      {
+        "question": 33,
+        "explanation": "Pacote Office é uma suíte de aplicativos, não campo de atuação profissional da Informática no sentido da classificação proposta."
+      },
+      {
+        "question": 34,
+        "explanation": "O art. 154-A prevê, em regra, ação condicionada à representação, com exceções legais; a conexão do dispositivo à internet e a violação de mecanismos de segurança não são requisitos absolutos."
+      },
+      {
+        "question": 35,
+        "explanation": "O Marco Civil incentiva padrões abertos e interoperabilidade, mas não impõe adoção exclusivamente de tecnologias livres; a exclusividade torna a afirmação incorreta."
+      },
+      {
+        "question": 36,
+        "explanation": "Controlador decide as finalidades e os meios de tratamento de dados pessoais; operador realiza tratamento em nome do controlador."
+      },
+      {
+        "question": 37,
+        "explanation": "Vírus depende da execução de arquivo ou programa hospedeiro para replicar-se; worm costuma ter propagação autônoma em rede."
+      },
+      {
+        "question": 38,
+        "explanation": "Encapsulamento reúne dados e operações em objeto e controla a exposição dos detalhes internos por interfaces definidas."
+      },
+      {
+        "question": 39,
+        "explanation": "Windows Hello permite autenticação por biometria e outros métodos associados ao dispositivo, conforme hardware e configuração disponíveis."
+      },
+      {
+        "question": 40,
+        "explanation": "No Prompt do Windows, `ipconfig` mostra informações das interfaces IP; `ipconfig /all` inclui detalhes como servidores DNS e DHCP."
+      }
+    ],
+    "tapes-2023": [
+      {
+        "question": 1,
+        "explanation": "O texto informa diretamente que o solo permanentemente congelado pode alcançar 300 metros de profundidade; as outras afirmativas extrapolam ou alteram o conteúdo."
+      },
+      {
+        "question": 2,
+        "explanation": "“Descartar”, “sutil” e “deletéria” equivalem, respectivamente, a desconsiderar, delicado e nocivo no contexto apresentado."
+      },
+      {
+        "question": 3,
+        "explanation": "A expressão inicial deslocada é isolada por vírgula; os dois-pontos introduzem a enumeração que detalha os dois tipos de organismos."
+      },
+      {
+        "question": 4,
+        "explanation": "Na construção “tão ... que”, há intensificação; “bem como” estabelece aproximação ou adição comparativa, conforme a classificação usada na questão."
+      },
+      {
+        "question": 5,
+        "explanation": "“Meio”, no sentido de “um pouco”, funciona como advérbio invariável. As outras frases erram concordância de anexo, bastante ou proibido/proibida."
+      },
+      {
+        "question": 6,
+        "explanation": "A vírgula entre informações de tempo e lugar organiza adjuntos adverbiais deslocados; nas outras frases há separações inadequadas ou ausência de vírgulas necessárias."
+      },
+      {
+        "question": 7,
+        "explanation": "“Em se tratando de” é construção fixa com próclise; “sempre” e “nunca” atraem o pronome, tornando inadequadas as colocações das outras opções."
+      },
+      {
+        "question": 8,
+        "explanation": "As regências nominais esperadas são “coerente com”, “digno de” e “habituado a”."
+      },
+      {
+        "question": 9,
+        "explanation": "“Advêm” concorda no plural com “programas”. “Haver” impessoal fica no singular; “precisar de” com índice de indeterminação também, e “mantêm” exige acento no plural."
+      },
+      {
+        "question": 10,
+        "explanation": "“A descoberta vem”, sujeito singular; “comparada à Pedra de Roseta”, com crase; a forma ortográfica correta é “hieróglifos”."
+      },
+      {
+        "question": 11,
+        "explanation": "A interseção tem cinco elementos {0,3,8,10,15}. O número de subconjuntos é 2^5 = 32."
+      },
+      {
+        "question": 12,
+        "explanation": "O lazer recebe 20% de R$ 5.600 = R$ 1.120. Combustível consome 30% desse valor: 1.120 × 0,30 = R$ 336."
+      },
+      {
+        "question": 13,
+        "explanation": "As raízes de x² − 6x − 27 = 0 são 9 e −3. A razão entre a maior e a menor é 9/(−3) = −3."
+      },
+      {
+        "question": 14,
+        "explanation": "Distância = 80 × 5 = 400 km; 3h12min = 3,2h. Velocidade = 400/3,2 = 125 km/h."
+      },
+      {
+        "question": 15,
+        "explanation": "Média ponderada: (8×1 + 5×3 + 6×1)/(1+3+1) = 29/5 = 5,8, menor que 6."
+      },
+      {
+        "question": 16,
+        "explanation": "Para formar três grupos diferenciados de quatro pessoas: 12!/(4!×4!×4!) = 34.650. Se os grupos fossem indistinguíveis, seria necessário dividir também por 3!."
+      },
+      {
+        "question": 17,
+        "explanation": "Sem reposição: P(preta e depois branca) = 5/9 × 4/8 = 20/72 = 5/18."
+      },
+      {
+        "question": 18,
+        "explanation": "Área lateral do cilindro = 2πrh = 2×3,14×3×10 = 188,4 m². Para três silos: 565,2 m²."
+      },
+      {
+        "question": 19,
+        "explanation": "Micro-ondas convencional executa instruções predefinidas, não implicando, por si só, inteligência artificial; assistentes e recomendações podem empregar IA."
+      },
+      {
+        "question": 20,
+        "explanation": "Ruído é poluição energética que não deixa resíduos materiais persistentes como os poluentes sólidos; ainda assim pode afetar saúde humana e animal."
+      },
+      {
+        "question": 21,
+        "explanation": "A definição descreve proteção social/seguridade contra perda de renda por enfermidade, maternidade, velhice e outras contingências."
+      },
+      {
+        "question": 22,
+        "explanation": "A ferramenta assinalada no Word abre opções de layout; a identificação depende de observar o ícone indicado na imagem original."
+      },
+      {
+        "question": 23,
+        "explanation": "Bots e botnets são softwares e redes de dispositivos sob controle automatizado, frequentemente remoto; monitoramento silencioso e envio de dados caracteriza principalmente spyware."
+      },
+      {
+        "question": 24,
+        "explanation": "No teclado ABNT2, Alt Gr aciona o terceiro símbolo de certas teclas; Shift normalmente aciona o segundo."
+      },
+      {
+        "question": 25,
+        "explanation": "Convenções e acordos coletivos e igualdade de direitos do trabalhador avulso estão expressos na Constituição; repouso semanal remunerado é preferencialmente aos domingos, não indiscriminadamente aos dois dias: I e II."
+      },
+      {
+        "question": 26,
+        "explanation": "Sancionar e regulamentar leis e promover desapropriações legais são atribuições executivas; alterar número de vereadores não é competência privativa do prefeito."
+      },
+      {
+        "question": 27,
+        "explanation": "Retardar ou omitir publicação obrigatória de leis e atos é infração político-administrativa por comprometer publicidade e eficácia dos atos."
+      },
+      {
+        "question": 28,
+        "explanation": "Função gratificada atende tarefas de direção/chefia/assessoramento e não é obrigatoriamente cumulativa com cargo em comissão; por isso I e III."
+      },
+      {
+        "question": 29,
+        "explanation": "A questão pede a exceção ao estatuto municipal; a regra de teto de 10 vezes o menor padrão não integra a redação indicada. Esse limite não deve ser transferido a Novo Cabrais."
+      },
+      {
+        "question": 30,
+        "explanation": "Décimo terceiro, gratificação de função e adicional por tempo de serviço são vantagens remuneratórias; diárias e ajuda de custo possuem natureza indenizatória: I, II e IV."
+      },
+      {
+        "question": 31,
+        "explanation": "A citação didática parcial deve identificar o programa e o titular, por isso I é falso; a punição básica descrita na Lei de Software é de detenção de seis meses a dois anos ou multa: E–C."
+      },
+      {
+        "question": 32,
+        "explanation": "O Marco Civil define “aplicações de internet” como funcionalidades acessíveis por terminal conectado e IP como código identificador segundo padrões internacionais; os dois itens corretos."
+      },
+      {
+        "question": 33,
+        "explanation": "A LGPD limita a multa simples a até 2% do faturamento, excluídos tributos, limitada a R$ 50 milhões por infração."
+      },
+      {
+        "question": 34,
+        "explanation": "Assinatura com certificado ICP-Brasil oferece mecanismos de autenticação do signatário e detecção de alteração do documento; não impede novas assinaturas nem torna tecnicamente impossível qualquer modificação."
+      },
+      {
+        "question": 35,
+        "explanation": "NS, MX, CNAME, SOA e PTR são registros DNS padronizados. POP e IMAP são protocolos de e-mail, não tipos de registro DNS."
+      },
+      {
+        "question": 36,
+        "explanation": "HTML5 introduziu tipos de input como `range`, `color`, `url` e `search`; os demais conjuntos incluem valores anteriores ou inexistentes, como `cep`."
+      },
+      {
+        "question": 37,
+        "explanation": "LAN abrange área local; WAN cobre áreas geograficamente extensas e interliga redes distantes. Os nomes não se relacionam a Windows/Linux."
+      },
+      {
+        "question": 38,
+        "explanation": "Senha é sequência secreta conhecida pelo usuário e usada como fator de autenticação; token e biometria são fatores distintos."
+      },
+      {
+        "question": 39,
+        "explanation": "Em instalações usuais do Windows, a partição do sistema usa a letra C:. Não existe “diretório raiz” universal obrigatório nessa letra em todos os computadores."
+      },
+      {
+        "question": 40,
+        "explanation": "Equipe eficaz compartilha metas, respeita diferenças e coopera na execução; I, II e III descrevem boas práticas."
+      }
+    ],
+    "mato-rico-2023": [
+      {
+        "question": 1,
+        "explanation": "O autor parte da experiência com cardápios digitais para refletir sobre limites da tecnologia e o valor da memória humana, sem afirmar que máquinas nunca poderão evoluir."
+      },
+      {
+        "question": 2,
+        "explanation": "O primeiro “não” é advérbio, enquanto “o não” é substantivado; “o que” pode retomar demonstrativamente um objeto; “mas” é conjunção adversativa: E–C–C."
+      },
+      {
+        "question": 3,
+        "explanation": "“Aliás” pode introduzir retificação ou esclarecimento, equivalendo no contexto a “na verdade”, e não a simples adição."
+      },
+      {
+        "question": 4,
+        "explanation": "Pelo acordo ortográfico, “hiperinformados” e “interurbanos” são escritos sem hífen; não há duplicação arbitrária de consoantes nesses casos."
+      },
+      {
+        "question": 5,
+        "explanation": "“Assistir” no sentido de presenciar rege preposição “a”; no sentido de prestar assistência pode ser transitivo direto. Todos os usos apresentados são aceitos."
+      },
+      {
+        "question": 6,
+        "explanation": "O futuro do subjuntivo de “vir” é “vier”; a ação futura na oração principal pede “poderemos”."
+      },
+      {
+        "question": 7,
+        "explanation": "“Depois,” introduz expressão deslocada que permite ênclise: “Depois, maltratou-o”; palavras negativas e certos advérbios sem pausa atraem próclise."
+      },
+      {
+        "question": 8,
+        "explanation": "“Anéis”, “herói”, “chapéu” e “pincéis” são oxítonas acentuadas por ditongos abertos tônicos (éi/éu/ói), conforme a regra."
+      },
+      {
+        "question": 9,
+        "explanation": "“Casa” determinada admite crase e “senhora” admite artigo feminino. Na expressão de modo “à Neymar”, a crase pode ocorrer por elipse de “à moda de”; o terceiro item é falso."
+      },
+      {
+        "question": 10,
+        "explanation": "“Mas” introduz oposição; “portanto” exprime conclusão, por isso não preserva o sentido."
+      },
+      {
+        "question": 11,
+        "explanation": "Quem faz alguma das duas atividades: 350−20 = 330. Apenas musculação: 280−80 = 200. Apenas natação: 330−200−80 = 50."
+      },
+      {
+        "question": 12,
+        "explanation": "O filho mais velho recebeu 55% de 75% do prêmio, isto é, 0,55×0,75×P = 6.187,50. Portanto P = R$ 15.000."
+      },
+      {
+        "question": 13,
+        "explanation": "1 km² = 1.000.000 m². Logo 2.649 km² = 2.649.000.000 m²."
+      },
+      {
+        "question": 14,
+        "explanation": "3 funcionários × 8 horas executam 6 obras: são 24 homem-horas/6 = 4 homem-horas por obra. Para 12 obras: 48 homem-horas, divididas por 2 funcionários = 24 horas."
+      },
+      {
+        "question": 15,
+        "explanation": "Em juros simples J = C×i×t: 400 = C×0,01×4, logo C = 10.000 e M = 10.000+400 = 10.400."
+      },
+      {
+        "question": 16,
+        "explanation": "É combinação de 12 pessoas tomadas 6 a 6, sem importar ordem: C(12,6) = 12!/(6!6!) = 924."
+      },
+      {
+        "question": 17,
+        "explanation": "Soma par ocorre com par+par ou ímpar+ímpar: (3/6)^2+(3/6)^2 = 1/2 = 50%."
+      },
+      {
+        "question": 18,
+        "explanation": "Num quadrado, diagonal = lado×√2; portanto lado = 10 cm e perímetro = 4×10 = 40 cm."
+      },
+      {
+        "question": 19,
+        "explanation": "Valores ordenados: 2,8,10,10,12,12,14,16; mediana = 11, média = 84/8 = 10,5. Diferença = 0,5."
+      },
+      {
+        "question": 20,
+        "explanation": "Padrão “dobrar e somar 1”: 2→5→11→23→47→95."
+      },
+      {
+        "question": 21,
+        "explanation": "A Conferência Rio-92 (ECO-92) ocorreu na cidade do Rio de Janeiro, Brasil."
+      },
+      {
+        "question": 22,
+        "explanation": "A alternativa indicada no gabarito informa 3.267 habitantes no Censo 2022 de Mato Rico. Esse dado é específico do município e deve ser conferido nas publicações do IBGE se usado fora da prova."
+      },
+      {
+        "question": 23,
+        "explanation": "Desenvolvimento sustentável procura conciliar necessidades econômicas e sociais com proteção ambiental e disponibilidade de recursos para gerações futuras."
+      },
+      {
+        "question": 24,
+        "explanation": "“Controlar Alterações” fica na guia Revisão do Word; revisões podem ser filtradas, e balões aparecem à margem do texto: E–E–C."
+      },
+      {
+        "question": 25,
+        "explanation": "“Pacote Office” é suíte de programas, não pasta pessoal padrão do perfil Windows como Documentos ou Downloads."
+      },
+      {
+        "question": 26,
+        "explanation": "Referência absoluta do Excel fixa coluna e linha com cifrões antes de cada uma: `$A$1`."
+      },
+      {
+        "question": 27,
+        "explanation": "Proteção do patrimônio histórico-cultural é competência municipal, observadas normas superiores; recusar fé a documentos e discriminar brasileiros são vedações."
+      },
+      {
+        "question": 28,
+        "explanation": "A Lei Orgânica invocada combina democracia representativa com formas de participação popular, conforme o princípio democrático municipal."
+      },
+      {
+        "question": 29,
+        "explanation": "A lei local listou auxílios, indenizações e gratificações como vantagens pecuniárias; os três itens são aceitos no estatuto de origem."
+      },
+      {
+        "question": 30,
+        "explanation": "O estatuto municipal citado não admite ingresso geral a partir de 16 anos. Não transfira idade ou requisitos de Mato Rico automaticamente a Novo Cabrais."
+      }
+    ],
+    "portao-2019": [
+      {
+        "question": 1,
+        "explanation": "A construção exige “porque” junto para expressar causa e crase na expressão feminina indicada no texto. A análise final depende das lacunas do texto-base."
+      },
+      {
+        "question": 2,
+        "explanation": "A ordenha contínua após o desmame estimula a manutenção da lactação; nutrição isolada não faz a produção permanecer indefinidamente."
+      },
+      {
+        "question": 3,
+        "explanation": "A produção das vacas de corte tende a cair após o terceiro mês, mas não cessa necessariamente de imediato; o texto informa repetição aproximada anual do ciclo reprodutivo: só II."
+      },
+      {
+        "question": 4,
+        "explanation": "“Ou seja” introduz reformulação e equivale a “isto é” ou “quer dizer”; “por conseguinte” indicaria consequência."
+      },
+      {
+        "question": 5,
+        "explanation": "“Produzem” e “passam” expressam fatos habituais no presente do indicativo, não hipótese ou ordem."
+      },
+      {
+        "question": 6,
+        "explanation": "Predicado é a informação declarada sobre o sujeito; na alternativa indicada, é o verbo “recomeça”, destacado na figura do caderno."
+      },
+      {
+        "question": 7,
+        "explanation": "Pretérito imperfeito do indicativo, 1ª pessoa do plural: estudávamos, corríamos, dormíamos."
+      },
+      {
+        "question": 8,
+        "explanation": "Não se inicia oração declarativa isolada com pronome oblíquo átono na norma-padrão; “não” atrai próclise, portanto as duas colocações estão erradas."
+      },
+      {
+        "question": 9,
+        "explanation": "Vírgulas isolam expressão intercalada e oração adverbial antecipada; nos dois casos apresentados, a pontuação é adequada."
+      },
+      {
+        "question": 10,
+        "explanation": "Nenhuma grafia está correta. Formas corretas: “aterrorizar”, “indecente” e “astúcia”."
+      },
+      {
+        "question": 11,
+        "explanation": "Pelas relações de Viète, em x²−5x+4=0, a soma das raízes é 5 (ou raízes 1 e 4)."
+      },
+      {
+        "question": 12,
+        "explanation": "PA de 8 termos: a8 = 5+7×3 = 26; soma = 8×(5+26)/2 = 124."
+      },
+      {
+        "question": 13,
+        "explanation": "Se 40% preferem banana, 60% não preferem; 0,60×200 = 120 pessoas."
+      },
+      {
+        "question": 14,
+        "explanation": "Lucro = 240−150 = 90; taxa sobre o custo = 90/150 = 0,60 = 60%."
+      },
+      {
+        "question": 15,
+        "explanation": "Seis das 20 canetas são vermelhas, portanto P = 6/20 = 30%."
+      },
+      {
+        "question": 16,
+        "explanation": "Juros simples: M = 380×(1+0,03×5) = 380×1,15 = R$ 437."
+      },
+      {
+        "question": 17,
+        "explanation": "A razão é 6 ovos para 2 xícaras = 3 ovos por xícara. Para 5 xícaras são 15 ovos."
+      },
+      {
+        "question": 18,
+        "explanation": "Tarde/manhã = 2/3 e manhã = 36. Tarde = 36×2/3 = 24 vendas."
+      },
+      {
+        "question": 19,
+        "explanation": "Uma máquina produz 160/4 = 40 peças por dia. Seis máquinas iguais produzem 6×40 = 240."
+      },
+      {
+        "question": 20,
+        "explanation": "A sequência alterna multiplicação por −3 e subtração de 9: −117×(−3) = 351."
+      },
+      {
+        "question": 21,
+        "explanation": "RAM guarda programas e dados em execução; cache é memória de baixíssima latência próxima à CPU; ROM não é volátil: 2–1–3."
+      },
+      {
+        "question": 22,
+        "explanation": "No Word, Ctrl+Shift+Enter insere quebra de coluna; Ctrl+Enter, de página; Shift+Enter, de linha; Ctrl+Espaço remove formatação de caracteres: 3–1–4–2."
+      },
+      {
+        "question": 23,
+        "explanation": "PROC faz busca em vetor; DIAS devolve diferença em dias, não meses/anos; CORRESP devolve posição, não valor; SE seleciona resultado por condição: C–E–E–C."
+      },
+      {
+        "question": 24,
+        "explanation": "O layout “Título e Conteúdo” no PowerPoint possui caixa de título superior e espaço de conteúdo principal. A alternativa A corresponde à miniatura indicada no caderno."
+      },
+      {
+        "question": 25,
+        "explanation": "Firewall pessoal filtra tráfego e conexões para reduzir acessos não autorizados; spyware é ameaça, não mecanismo de defesa."
+      },
+      {
+        "question": 26,
+        "explanation": "Compostagem transforma resíduos orgânicos em composto. Lançá-los em corpos d’água provoca poluição e não é destinação adequada: C–E."
+      },
+      {
+        "question": 27,
+        "explanation": "Fundamentos constitucionais: soberania, cidadania e dignidade humana, entre outros; “singularismo político” é incorreto, pois o texto constitucional prevê pluralismo: II, III e IV."
+      },
+      {
+        "question": 28,
+        "explanation": "O prefeito pode pedir urgência na tramitação dos projetos de sua iniciativa, conforme a lei local; as demais opções atribuem competências e quóruns inadequados."
+      },
+      {
+        "question": 29,
+        "explanation": "Questão anulada no gabarito definitivo. Não há alternativa oficial válida para memorizar; confira as regras de diárias na lei municipal atualmente exigida no seu edital."
+      },
+      {
+        "question": 30,
+        "explanation": "A lei assegura reciprocidade de direitos a estrangeiros conforme condições; o registro de software não é atribuído por ato legislativo nos termos propostos; aluguel comercial pode ser direito exclusivo: C–E–C."
+      },
+      {
+        "question": 31,
+        "explanation": "A hipótese de aumento de pena do dispositivo penal histórico citado abrangia autoridades específicas listadas no item I. Atenção: houve alterações legais posteriores; não use isoladamente esta questão de 2019 para estudar a redação atual."
+      },
+      {
+        "question": 32,
+        "explanation": "O Marco Civil garante proteção da intimidade, indenização por dano material ou moral e sigilo das comunicações com exceções legais; não garante redução de qualidade contratada: C–E–C."
+      },
+      {
+        "question": 33,
+        "explanation": "No Windows, conta de administrador possui permissões ampliadas para instalar programas e modificar configurações protegidas, normalmente sujeitas ao UAC."
+      },
+      {
+        "question": 34,
+        "explanation": "A memória CMOS, tradicionalmente alimentada por bateria, guarda parâmetros do firmware/BIOS; sistemas modernos podem usar NVRAM."
+      },
+      {
+        "question": 35,
+        "explanation": "Na figura, a comunicação usa chave pública de Maria para cifrar e chave privada dela para decifrar; somente a parte privada deve permanecer secreta."
+      },
+      {
+        "question": 36,
+        "explanation": "Roteamento escolhe caminhos; DNS converte nomes e endereços; VPN cria túnel para comunicação privada: 3–1–2."
+      },
+      {
+        "question": 37,
+        "explanation": "No Linux, `ls` lista arquivos e diretórios; no Windows, um comando comum com essa finalidade é `dir`."
+      },
+      {
+        "question": 38,
+        "explanation": "Sistemas operacionais de 64 bits geralmente executam aplicações de 32 bits com camada de compatibilidade; processadores de 32 bits não executam SO de 64 bits."
+      },
+      {
+        "question": 39,
+        "explanation": "Gateway interconecta redes e pode realizar mediação entre diferentes protocolos; HTTPS é protocolo de aplicação e extranet é modelo de acesso."
+      },
+      {
+        "question": 40,
+        "explanation": "Hotspot é um ponto de acesso Wi-Fi disponível em determinado local. A alternativa da banca acrescenta gratuidade, mas atenção: um hotspot também pode exigir pagamento ou autenticação."
+      }
+    ],
+    "sentinela-2020": [
+      {
+        "question": 1,
+        "explanation": "Conforme o texto-base, a exposição noturna à luz azul pode prejudicar a saúde, e filtros/óculos específicos reduzem o contato. A primeira afirmação não é sustentada: II e III."
+      },
+      {
+        "question": 2,
+        "explanation": "Em “prejuízo” e “Piauí”, o acento marca hiato com i tônico isolado ou acompanhado de s na sílaba, conforme condições da regra."
+      },
+      {
+        "question": 3,
+        "explanation": "Na expressão indicada, “azul” qualifica o substantivo “luz” e exerce função de adjetivo."
+      },
+      {
+        "question": 4,
+        "explanation": "“Ascensão” e “paçoca” estão corretas; a grafia normativa é “compreensão”, não “compreenção”: C–E–C."
+      },
+      {
+        "question": 5,
+        "explanation": "“Pescar” é infinitivo, não gerúndio; “correndo” é gerúndio e “ouvido” é particípio: E–C–C."
+      },
+      {
+        "question": 6,
+        "explanation": "Na primeira oração o grupo “os pais e os filhos” é sujeito posposto; na segunda, “chegamos tarde ontem” forma o predicado com sujeito elíptico: 1–2."
+      },
+      {
+        "question": 7,
+        "explanation": "“Necessita-se de porteiros” tem sujeito indeterminado e verbo no singular. “Precisam-se de” viola a regência; com partícula apassivadora, outros casos pedem verbo no plural."
+      },
+      {
+        "question": 8,
+        "explanation": "“Anzóis” mantém acento em ditongo aberto tônico de oxítona; “heroico”, “jiboia” e “joia” perderam acento com o acordo ortográfico."
+      },
+      {
+        "question": 9,
+        "explanation": "“Lar” e “casa” podem ser sinônimos; “germânico” não equivale a francês, e entediado não significa empenhado: C–E–E."
+      },
+      {
+        "question": 10,
+        "explanation": "A oração adverbial inicial fica separada por vírgula. Na enumeração do segundo item falta vírgula entre dois elementos da lista; somente I."
+      },
+      {
+        "question": 11,
+        "explanation": "Em juros simples, M = 2.500 × (1 + 0,0075 × 24) = 2.500 × 1,18 = R$ 2.950."
+      },
+      {
+        "question": 12,
+        "explanation": "0,42 × 250 = 105 estudantes."
+      },
+      {
+        "question": 13,
+        "explanation": "Fatorando x²−20x+96 = (x−12)(x−8), raízes 12 e 8. Como Matemática tem mais professores, são 12."
+      },
+      {
+        "question": 14,
+        "explanation": "Largura = 48/12 = 4 cm; perímetro = 2×(12+4) = 32 cm."
+      },
+      {
+        "question": 15,
+        "explanation": "Probabilidade de escolher homem = 18/40 = 45%."
+      },
+      {
+        "question": 16,
+        "explanation": "Razão ciências/história = 1/3: são quatro partes em 24 docentes; cada parte vale 6. Ciências tem 6 professores."
+      },
+      {
+        "question": 17,
+        "explanation": "Regra de três direta: 15/5 = 3 pães por kg; com 13 kg, 39 pães."
+      },
+      {
+        "question": 18,
+        "explanation": "Média = (1,84+1,87+1,91+1,94+1,95+2,01)/6 = 11,52/6 = 1,92 m."
+      },
+      {
+        "question": 19,
+        "explanation": "José deve ficar imediatamente atrás de Pedro, e Felipe não pode ficar primeiro; com três pessoas, a ordem é Pedro–José–Felipe."
+      },
+      {
+        "question": 20,
+        "explanation": "O custo cresce R$ 14,50 por peça: C(x) = 14,50×x."
+      },
+      {
+        "question": 21,
+        "explanation": "O mosquito Aedes aegypti é vetor da dengue, mas utiliza água parada para reprodução, não necessita água corrente: somente a primeira parte está correta."
+      },
+      {
+        "question": 22,
+        "explanation": "Pela Constituição Federal, cada legislatura dura quatro anos, equivalentes ao mandato ordinário da Câmara dos Deputados."
+      },
+      {
+        "question": 23,
+        "explanation": "A Lei de Software prevê registro facultativo (“poderão”) em órgão designado por ato do Poder Executivo, nos termos legais; o registro não cria a proteção autoral."
+      },
+      {
+        "question": 24,
+        "explanation": "Segundo a LAI, os prazos máximos são ultrassecreta 25 anos, secreta 15 e reservada 5. Logo apenas o item III está correto."
+      },
+      {
+        "question": 25,
+        "explanation": "O gabarito acompanha a redação histórica do art. 154-A e seu agravamento, conforme a legislação vigente na época. Como a pena e alguns elementos do tipo foram modificados posteriormente, não memorize esses números como atuais."
+      },
+      {
+        "question": 26,
+        "explanation": "Registro de conexão descreve início/fim e IP; endereço IP identifica terminal; internet é rede mundial; registro de aplicação indica acesso a serviço; administrador de sistema autônomo gerencia blocos: 4–2–1–5–3."
+      },
+      {
+        "question": 27,
+        "explanation": "Renúncia escrita e falecimento são hipóteses objetivas que permitem declarar extinto o mandato do vereador, conforme a Lei Orgânica citada."
+      },
+      {
+        "question": 28,
+        "explanation": "Nomeação e reintegração são formas de provimento; “condução” não é modalidade estatutária de provimento: I e III."
+      },
+      {
+        "question": 29,
+        "explanation": "A função NÃO inverte valor lógico. A função que verifica se TODOS são verdadeiros é E; SE escolhe entre valores a partir de uma condição. Só a primeira parte está certa."
+      },
+      {
+        "question": 30,
+        "explanation": "Periféricos, placas e cabos são hardware; código e sistemas operacionais são software: 1–2–2."
+      },
+      {
+        "question": 31,
+        "explanation": "No Windows 10 da época, o Internet Explorer podia estar incluído no sistema e podia ser fixado na barra de tarefas; portanto não exigia instalação adicional: E–C. Hoje o IE é obsoleto."
+      },
+      {
+        "question": 32,
+        "explanation": "`cp` é usado para copiar arquivos e diretórios no GNU/Linux; `ls` lista, `pwd` mostra o diretório atual e `cd` muda de diretório."
+      },
+      {
+        "question": 33,
+        "explanation": "A figura representa estado de ausência de conexão com a internet na área de notificação do Windows."
+      },
+      {
+        "question": 34,
+        "explanation": "IPsec opera no nível IP com associações de segurança e negociações específicas; a banca descreve essa organização como orientada a conexões. Não confunda com protocolo TCP."
+      },
+      {
+        "question": 35,
+        "explanation": "IMAP acessa e organiza mensagens no servidor; POP3 recebe/baixa; FTP transfere arquivos; SMTP envia mensagens: 3–2–4–1."
+      },
+      {
+        "question": 36,
+        "explanation": "Um Trojan DoS transforma o equipamento comprometido em fonte de requisições de negação de serviço contra terceiros; as outras denominações têm funções diferentes."
+      },
+      {
+        "question": 37,
+        "explanation": "Função hash gera resumo fixo; IDS detecta intrusão; PGP oferece criptografia e assinatura; sniffer captura tráfego: 3–1–4–2."
+      },
+      {
+        "question": 38,
+        "explanation": "Pilha segue LIFO: o último item inserido é o primeiro removido; fila segue FIFO."
+      },
+      {
+        "question": 39,
+        "explanation": "Em Java, o construtor tem exatamente o nome da classe e não possui tipo de retorno. Para `Cadastro`, `public Cadastro() {}` é a declaração indicada."
+      },
+      {
+        "question": 40,
+        "explanation": "Clonagem de máquina virtual copia a configuração-base para novas instâncias, agilizando a implantação; depois devem ser ajustados identificadores, rede e configurações de cada servidor."
+      }
+    ]
+  }
+}

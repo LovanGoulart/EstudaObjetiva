@@ -1,89 +1,119 @@
-# EstudaObjetiva — app de estudos para o concurso de Novo Cabrais/RS
+# EstudaObjetiva 2.0 — Novo Cabrais/RS
 
-Aplicação web **Python + Flask + SQLite + HTML + CSS + JavaScript** para organizar os estudos de Técnico em Informática. O projeto é independente, com interface original. O layout e fluxo foram inspirados no uso de painéis de planejamento e acompanhamento por aplicativos de produtividade, como Todoist e StudySmarter, sem copiar seu código.
+Aplicativo pessoal de preparação para o cargo de **Técnico em Informática** (Instituto Objetiva, prova prevista em **10/01/2027**). Projeto em **Python, Flask, SQLite, HTML, CSS, JavaScript e PWA**, com interface responsiva em português do Brasil.
 
 ## Funcionalidades
 
-- **181 tópicos** com prioridades P1, P2 e P3, organizados pelas cinco disciplinas e grupos do checklist.
-- Estados **Pendente / Estudando / Concluído**, com progresso de cada disciplina.
-- **Anotações individuais por tópico** e anotações nos objetivos de estudo sem datas fixas.
-- **Revisões automáticas** agendadas para 1, 7 e 30 dias após marcar um tópico como concluído.
-- **Plano flexível**, com sugestões de assuntos sem datas obrigatórias. É possível adicionar, editar, concluir, reabrir e excluir objetivos a qualquer momento.
-- Registro de minutos de estudo, tipo e disciplina, com histórico e gráficos simples.
-- Registro de simulados com 40 questões e pesos do edital: Português 10×2, Matemática 8×2, Gerais 6×2, Legislação 6×2, Específicos 10×4.
-- Backup e restauração em JSON, tema claro/escuro, interface responsiva e PWA instalável.
+- **Painel:** conteúdos concluídos, tempo estudado, revisões, contagem regressiva, média e evolução nas provas.
+- **Conteúdo programático:** 181 tópicos divididos nas cinco matérias do edital; status Pendente, Estudando ou Concluído; anotações por assunto; busca, filtros e revisões espaçadas (1, 7 e 30 dias).
+- **Plano livre:** objetivos sem datas obrigatórias. Permite adicionar, editar, concluir e reabrir objetivos; não oferece exclusão de conteúdos.
+- **Banco de provas — 11 cadernos:** nove provas anteriores fornecidas pelo usuário e dois simulados autorais; responder dentro do aplicativo, salvar e continuar depois, refazer quantas vezes quiser, conferir gabarito e registrar anotações por questão.
+- **Simulados autorais:** 40 questões de múltipla escolha, textos e alternativas nativos no app, explicação individual e pontuação de acordo com o edital: 2 pontos nas quatro primeiras disciplinas, 4 em Conhecimentos Específicos, total 100.
+- **Provas antigas:** páginas originais convertidas em imagens para leitura dentro do aplicativo, com navegação sincronizada ao número da questão, cartão de respostas, correção por gabarito fornecido e aproveitamento percentual. O sistema não atribui pesos do edital novo a provas antigas com estrutura diferente. As explicações individuais das provas antigas não acompanham o gabarito enviado; o aplicativo indica isso claramente, e permite registrar o raciocínio no campo de notas.
+- **Sem gabarito:** Candiota/RS 2023 permite responder, salvar e revisar as marcações, mas não recebe nota inventada.
+- **Planos de aula:** 19 roteiros práticos por disciplina, com objetivos, conteúdos, exercícios sugeridos, anotações e opção de marcar concluído. Sem dias ou horários obrigatórios.
+- **Legislação e arquivos:** resumo de legislação, edital, links para textos oficiais e inclusão de PDFs próprios (até 10 MB) com leitura dentro da tela.
+- **Registros:** horas dedicadas, simulados avulsos e resultados de provas realizadas dentro do aplicativo.
+- **Backup em JSON:** inclui tópicos, notas, revisões, aulas, tentativas e anotações por questão. Documentos PDF que você enviar devem ser guardados separadamente em `instance/arquivos`.
+- **PWA:** instalável em Android e desktop; iOS pelo menu Compartilhar > Adicionar à Tela de Início. Dados são armazenados no servidor (não há gravação offline nem push neste pacote).
 
 ## Instalação no Windows
 
-Requer Python 3.10+.
+Requer Python 3.10 ou superior. Extraia o ZIP e, na pasta do projeto:
 
 ```powershell
-cd EstudaObjetiva
-py -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
 python app.py
 ```
 
-Abra **http://127.0.0.1:5000**.
+Acesse **http://127.0.0.1:5000**. No Windows, se o PowerShell bloquear a ativação, execute o arquivo `iniciar_windows.bat` que já acompanha o projeto.
 
-## Instalação no Linux/macOS
+## Atualização no PythonAnywhere SEM APAGAR DADOS
+
+1. Em **Files**, faça backup de `/home/SEU_USUARIO/EstudaObjetiva/instance/estudos.db` e da pasta `instance/arquivos`, se houver.
+2. Envie os arquivos e pastas do ZIP **para a raiz existente** `~/EstudaObjetiva`, preservando **a pasta `instance` existente**. Não crie uma segunda subpasta `EstudaObjetiva`.
+3. Os nomes `exam_assets/catalog.json`, `exam_assets/native_quizzes.json`, `exam_assets/pages`, `static/study_plus.js` e `study_extension.py` são necessários. A pasta `exam_assets` deve conter as nove provas PDF originais.
+4. No Bash, use o **Python da virtualenv configurada em Web**:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python app.py
+cd ~/EstudaObjetiva
+python -m pip install -r requirements.txt
+python -c "import app; print('Banco:', app.DB_PATH); print('Provas:', len(app.REAL_EXAMS))"
 ```
 
-## Onde ficam os dados?
+**Resultado esperado:** `Provas: 11`. O banco permanece em `~/EstudaObjetiva/instance/estudos.db`, a menos que você configure `DATABASE_PATH`.
 
-Em `instance/estudos.db`, criado automaticamente. Não apague esse arquivo para não perder progresso. Use também **Backup e ajustes → Exportar backup JSON** regularmente.
+5. Em **Web → WSGI configuration file**, mantenha a importação com o caminho correto:
 
-## Uso em celular e publicação
+```python
+import sys
+PROJECT = '/home/SEU_USUARIO/EstudaObjetiva'
+if PROJECT not in sys.path:
+    sys.path.insert(0, PROJECT)
+from app import app as application
+```
 
-- O servidor padrão escuta apenas `127.0.0.1` para uso pessoal no computador.
-- Para usar em outros aparelhos, implante em um servidor com HTTPS (por exemplo, PythonAnywhere com aplicação WSGI). O arquivo `wsgi.py` já exporta `application`.
-- **Antes de publicar**, defina `SECRET_KEY` com 32+ caracteres aleatórios persistentes e `APP_PASSWORD_HASH` com um hash criado por `werkzeug.security.generate_password_hash('sua_senha_forte')`. Exemplo para gerar hash: `python -c "from werkzeug.security import generate_password_hash; print(generate_password_hash('SUA_SENHA'))"`. Configure o valor impresso no ambiente, sem inserir a senha em código-fonte.
-- Não publique o app sem senha de acesso. Não use o servidor de desenvolvimento Flask em produção: utilize o servidor WSGI da plataforma, HTTPS e backups.
-- O PWA facilita instalação e mantém a interface no cache, mas **não promete edição de dados offline nem notificações push**. O servidor precisa estar acessível para salvar informações.
-- Não há contas multiusuário, envio de e-mails nem sincronização automática entre instâncias independentes.
+6. Clique em **Web → Reload**. Para atualizar o PWA, abra o site, force a atualização (`Ctrl + F5`) e, se necessário, desregistre o service worker antigo em DevTools → Application → Service Workers.
 
-## Observações sobre conteúdo e fonte
+### Atenção: deploy público e senha
 
-Os 181 tópicos foram extraídos do PDF `Checklist_Estudos_Tecnico_Informatica_Novo_Cabrais_2027.pdf` discutido nesta conversa. As prioridades são indicativas e não representam probabilidades oficiais. As normas devem ser estudadas pela legislação vigente no escopo temporal do edital.
+Este aplicativo é de **uso individual**. Se o site for acessível pela internet, **ative autenticação** com a variável de ambiente `APP_PASSWORD_HASH`. Gere um hash com:
+
+```bash
+python -c "from werkzeug.security import generate_password_hash; print(generate_password_hash(input('Digite sua senha: ')))"
+```
+
+Configure a variável `APP_PASSWORD_HASH` com o hash obtido **no ambiente do servidor**, nunca em arquivos versionados no GitHub. Também é recomendado definir `SECRET_KEY` com valor aleatório e `APP_COOKIE_SECURE=1` ao usar HTTPS. Configure a virtualenv do site na aba **Web** do PythonAnywhere.
+
+### Banco e compatibilidade
+
+- As tabelas novas (`question_notes`, `lesson_progress`, `library_files`) são criadas automaticamente em `init_db()`.
+- Os tópicos antigos são preservados via `INSERT OR IGNORE`; notas, progresso, simulados e tentativas continuam no banco preexistente.
+- **Nunca** envie um `estudos.db` vazio sobre o banco de produção e não remova a pasta `instance`.
+- Uma instalação limpa cria automaticamente as tabelas e cadastra os 181 tópicos do edital.
+
+## Estrutura principal
+
+```text
+EstudaObjetiva/
+  app.py                 # Backend e rotas anteriores
+  study_extension.py     # Notas de questões, aulas, biblioteca e métricas
+  seed.json              # 181 assuntos
+  requirements.txt
+  templates/
+  static/
+    app.js               # Painel, tópicos, revisões, agenda livre
+    real_exams.js        # Resolução e correção das provas
+    study_plus.js        # Planos de aula e legislação
+    style.css, sw.js, manifest.webmanifest, icons/
+  exam_assets/
+    catalog.json         # 9 provas com gabaritos quando fornecidos
+    native_quizzes.json  # 2 simulados inéditos com comentários
+    *.pdf                # cadernos originais e gabaritos
+    pages/<prova>/*.webp # páginas ilustradas para consulta no próprio app
+  study_library/
+    lesson_plans.json
+    Edital_Novo_Cabrais_2026.pdf
+    Resumo_Legislacao_Concurso.pdf
+  instance/              # criado no primeiro uso, NÃO ENVIAR AO GITHUB
+  tests/
+```
 
 ## Testes
+
+Após instalar as dependências:
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-## Atualização: provas reais e datas brasileiras
+A correção automática das provas antigas depende dos gabaritos fornecidos no arquivo original do usuário, incluindo versões preliminares. É possível haver anulações ou alterações posteriores; revise as informações antes de usar como decisão oficial.
 
-Na atualização, substitua **somente os arquivos do ZIP**, preservando a pasta
-`instance/` e seu banco de dados SQLite. A nova tabela de tentativas é criada
-automaticamente na primeira inicialização. Use `pip install -r requirements.txt`
-no ambiente virtual existente para instalar também `tzdata` no Windows.
+## Limitações intencionais
 
-Acesse **Provas reais** no menu. Há nove cadernos PDF originais: Guaraniaçu,
-Santa Leopoldina, FEAS, Dezesseis de Novembro, Tapes, Mato Rico, Candiota,
-Portão e Sentinela do Sul. Selecione **Nova tentativa**, leia as questões no PDF,
-preencha o cartão de respostas e clique em **Finalizar e corrigir**. Você pode
-interromper e retomar provas sem perder as respostas e refazê-las quantas vezes
-quiser; o histórico fica em SQLite e está incluído no backup.
-
-São oito gabaritos no material. Candiota não tinha gabarito correspondente e,
-portanto, permite salvar respostas, mas **não oferece correção automática**.
-Os gabaritos marcados como preliminares podem ser alterados pelo organizador.
-Nas provas com questões anuladas, a questão recebe crédito.
-
-Datas exibidas e digitadas pelo usuário seguem o formato **dd/mm/aaaa**.
-Internamente, banco de dados e APIs utilizam `aaaa-mm-dd` (ISO 8601), sem alterar
-cálculos ou ordenações. Os formulários validam a data antes de salvar.
-
-Para verificar a instalação: `python -m unittest discover -s tests -v`.
-
-## Atualização do plano flexível
-
-Ao iniciar a versão atualizada, o aplicativo transforma automaticamente o antigo cronograma com datas em uma lista de objetivos sem prazo definido. Marcações de concluído e anotações já existentes são preservadas. Faça um backup JSON antes da atualização e mantenha a pasta `instance` intacta. A data oficial da prova, as datas do histórico e as sugestões de revisão continuam funcionando normalmente.
+- **Não** fornece a prova sigilosa de 10/01/2027: os simulados do aplicativo são autorais.
+- **Não** inventa comentário detalhado de questões antigas sem fonte de explicação verificada.
+- Bibliotecas e sites externos podem mudar; consultar legislação atualizada nas fontes oficiais é responsabilidade do estudante.
+- Não inclui trabalho em tempo real, sincronização entre bancos independentes, push ou exercícios gerados automaticamente por IA.

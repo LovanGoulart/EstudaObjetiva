@@ -1,0 +1,230 @@
+[
+  {
+    "id": "aula-01",
+    "discipline": "Informática",
+    "title": "Redes: OSI, TCP/IP e protocolos",
+    "goal": "Identificar camadas, funções e protocolos.",
+    "topics": [
+      "Comparar as camadas OSI e TCP/IP",
+      "Relacionar DNS, DHCP, HTTP, HTTPS e TCP/UDP"
+    ],
+    "practice": "Resolver 10 questões técnicas sobre os protocolos.",
+    "minutes": 40
+  },
+  {
+    "id": "aula-02",
+    "discipline": "Informática",
+    "title": "IPv4, máscaras e sub-redes",
+    "goal": "Calcular redes e identificar hosts.",
+    "topics": [
+      "Endereço, máscara, rede e broadcast",
+      "CIDR e quantidade de endereços por bloco"
+    ],
+    "practice": "Calcular 5 sub-redes e conferir o resultado.",
+    "minutes": 40
+  },
+  {
+    "id": "aula-03",
+    "discipline": "Informática",
+    "title": "Hardware e diagnóstico",
+    "goal": "Distinguir componentes e falhas comuns.",
+    "topics": [
+      "CPU, RAM, ROM, SSD, BIOS/UEFI, placa-mãe",
+      "Sintomas de falhas e sequência lógica de diagnóstico"
+    ],
+    "practice": "Resolver 10 questões sobre manutenção.",
+    "minutes": 50
+  },
+  {
+    "id": "aula-04",
+    "discipline": "Informática",
+    "title": "Windows, Linux e permissões",
+    "goal": "Reconhecer comandos, arquivos e controle de acesso.",
+    "topics": [
+      "Usuários, grupos, permissões, serviços e processos",
+      "Sistemas de arquivos e atualização de programas"
+    ],
+    "practice": "Fazer uma tabela comparando Windows e Linux.",
+    "minutes": 40
+  },
+  {
+    "id": "aula-05",
+    "discipline": "Informática",
+    "title": "Segurança, backups e proteção de dados",
+    "goal": "Aplicar conceitos de segurança.",
+    "topics": [
+      "Confidencialidade, integridade, disponibilidade e autenticidade",
+      "Backup, criptografia, firewall, malware e engenharia social"
+    ],
+    "practice": "Resolver 12 questões e justificar cada alternativa errada.",
+    "minutes": 40
+  },
+  {
+    "id": "aula-06",
+    "discipline": "Informática",
+    "title": "Banco de dados e SQL",
+    "goal": "Ler comandos básicos e relacionamentos.",
+    "topics": [
+      "SELECT, INSERT, UPDATE e DELETE",
+      "Chaves, relacionamentos, modelagem e integridade"
+    ],
+    "practice": "Escrever 4 consultas simples em SQL.",
+    "minutes": 50
+  },
+  {
+    "id": "aula-07",
+    "discipline": "Informática",
+    "title": "Programação, Web e Git",
+    "goal": "Interpretar algoritmos e aplicações.",
+    "topics": [
+      "Python, variáveis, laços, funções e orientação a objetos",
+      "HTML, CSS, JavaScript, responsividade e controle de versão"
+    ],
+    "practice": "Resolver 10 questões sobre código e conceitos.",
+    "minutes": 40
+  },
+  {
+    "id": "aula-08",
+    "discipline": "Legislação",
+    "title": "Constituição: princípios e direitos",
+    "goal": "Diferenciar fundamentos e garantias.",
+    "topics": [
+      "CF/88 arts. 1º a 17",
+      "CF/88 arts. 18 a 43; Administração Pública"
+    ],
+    "practice": "Responder 10 questões e localizar cada artigo aplicável.",
+    "minutes": 40
+  },
+  {
+    "id": "aula-09",
+    "discipline": "Legislação",
+    "title": "Constituição: Poderes e Ministério Público",
+    "goal": "Reconhecer competências e composição.",
+    "topics": [
+      "CF/88 arts. 44 a 69; 76 a 92",
+      "CF/88 arts. 101 e 102; 127 a 129"
+    ],
+    "practice": "Comparar competências e prazos em uma tabela.",
+    "minutes": 50
+  },
+  {
+    "id": "aula-10",
+    "discipline": "Legislação",
+    "title": "Lei Orgânica e regime jurídico municipal",
+    "goal": "Identificar deveres, competências e direitos.",
+    "topics": [
+      "Lei Orgânica do Município de Novo Cabrais",
+      "Lei Municipal 335/2001 - Regime Jurídico"
+    ],
+    "practice": "Ler os dispositivos oficiais e registrar prazos confirmados.",
+    "minutes": 40
+  },
+  {
+    "id": "aula-11",
+    "discipline": "Legislação",
+    "title": "Normas legais de Informática",
+    "goal": "Distinguir direitos e obrigações.",
+    "topics": [
+      "Lei 9.609/1998 e Código Penal: 154-A, 154-B, 155 e 171",
+      "Marco Civil 12.965/2014 e LGPD 13.709/2018"
+    ],
+    "practice": "Resolver questões da Objetiva e apontar os artigos corretos.",
+    "minutes": 40
+  },
+  {
+    "id": "aula-12",
+    "discipline": "Português",
+    "title": "Interpretação, coesão e vocabulário",
+    "goal": "Distinguir ideia central e efeitos de sentido.",
+    "topics": [
+      "Estrutura textual, coesão e coerência",
+      "Sentido contextual, sinônimos, antônimos e conectivos"
+    ],
+    "practice": "Interpretar 2 textos e resolver 10 questões.",
+    "minutes": 50
+  },
+  {
+    "id": "aula-13",
+    "discipline": "Português",
+    "title": "Concordância, regência e crase",
+    "goal": "Aplicar a norma-padrão.",
+    "topics": [
+      "Concordância nominal e verbal",
+      "Regência, crase e colocação pronominal"
+    ],
+    "practice": "Corrigir 10 frases e justificar as correções.",
+    "minutes": 40
+  },
+  {
+    "id": "aula-14",
+    "discipline": "Português",
+    "title": "Sintaxe, pontuação e ortografia",
+    "goal": "Analisar períodos e classes gramaticais.",
+    "topics": [
+      "Sujeito, predicado, termos da oração, coordenação e subordinação",
+      "Pontuação, ortografia e acentuação"
+    ],
+    "practice": "Resolver 12 questões de provas anteriores.",
+    "minutes": 40
+  },
+  {
+    "id": "aula-15",
+    "discipline": "Matemática",
+    "title": "Porcentagem e regra de três",
+    "goal": "Resolver problemas com proporções.",
+    "topics": [
+      "Razões, proporções, grandezas e regra de três",
+      "Porcentagens sucessivas, lucro e desconto"
+    ],
+    "practice": "Resolver 12 problemas sem consultar fórmulas.",
+    "minutes": 50
+  },
+  {
+    "id": "aula-16",
+    "discipline": "Matemática",
+    "title": "Equações e geometria",
+    "goal": "Aplicar fórmulas essenciais.",
+    "topics": [
+      "Equações de 1º e 2º graus, funções",
+      "Área, perímetro, Pitágoras e unidades de medida"
+    ],
+    "practice": "Refazer erros e resolver 10 exercícios.",
+    "minutes": 40
+  },
+  {
+    "id": "aula-17",
+    "discipline": "Matemática",
+    "title": "Juros, probabilidade e combinatória",
+    "goal": "Reconhecer modelos de cálculo.",
+    "topics": [
+      "Juros simples/compostos, médias",
+      "Probabilidade, contagem, sequências e lógica"
+    ],
+    "practice": "Resolver 10 exercícios mistos da banca.",
+    "minutes": 40
+  },
+  {
+    "id": "aula-18",
+    "discipline": "Conhecimentos Gerais",
+    "title": "Informática básica e ferramentas",
+    "goal": "Dominar os programas e rotinas comuns.",
+    "topics": [
+      "Windows, Word, Excel e Outlook",
+      "E-mail, armazenamento em nuvem, reuniões e IA"
+    ],
+    "practice": "Responder 10 questões e revisar atalhos.",
+    "minutes": 50
+  },
+  {
+    "id": "aula-19",
+    "discipline": "Conhecimentos Gerais",
+    "title": "Atualidades e ética no serviço público",
+    "goal": "Revisar assuntos contextualizados.",
+    "topics": [
+      "Política, economia, sociedade, meio ambiente, saúde e tecnologia",
+      "Ética, atendimento e segurança do trabalho"
+    ],
+    "practice": "Fazer uma revisão breve de fontes oficiais e 8 questões.",
+    "minutes": 40
+  }
+]
