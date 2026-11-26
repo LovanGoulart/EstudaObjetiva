@@ -186,35 +186,64 @@ def init_db():
 init_db()
 app.logger.info('EstudaObjetiva: banco SQLite em %s', DB_PATH)
 
+# LOGIN_USUARIO_SENHA_V1: arquivo privado, fora da pasta static e fora do Git.
+import hmac
+from flask import redirect, url_for
+
+LOGIN_FILE = INSTANCE_DIR / '.login_credentials.json'
+
+def login_credentials():
+    """Lê somente credenciais com senha criptograficamente hasheada."""
+    try:
+        value = json.loads(LOGIN_FILE.read_text(encoding='utf-8'))
+        if isinstance(value.get('username'), str) and isinstance(value.get('password_hash'), str):
+            return value
+    except (OSError, ValueError, TypeError, AttributeError):
+        pass
+    return None
+
 @app.before_request
 def security():
-    # Optional protection for Internet deployments: set APP_PASSWORD_HASH with Werkzeug hash.
-    password_hash=os.getenv('APP_PASSWORD_HASH','')
-    if password_hash and request.endpoint not in ('login','static','manifest','service_worker') and not session.get('authenticated'):
-        if request.path.startswith('/api/'):return jsonify(error='Autenticação necessária'),401
-        return render_template('login.html')
-    if request.method in ('POST','PATCH','PUT','DELETE') and request.endpoint!='login':
-        token=request.headers.get('X-CSRF-Token','')
-        if not token or token!=session.get('csrf'):return jsonify(error='CSRF inválido, atualize a página'),403
+    # Todas as rotas privadas exigem sessão autenticada; falha fechado sem configuração.
+    public_endpoints = ('login', 'static', 'manifest', 'service_worker')
+    if request.endpoint not in public_endpoints and not session.get('authenticated'):
+        if request.path.startswith('/api/'):
+            return jsonify(error='Autenticação necessária'), 401
+        return redirect(url_for('login'))
+    if request.method in ('POST', 'PATCH', 'PUT', 'DELETE') and request.endpoint != 'login':
+        token = request.headers.get('X-CSRF-Token', '')
+        if not token or not hmac.compare_digest(token, session.get('csrf', '')):
+            return jsonify(error='CSRF inválido, atualize a página'), 403
 
 @app.after_request
 def headers(resp):
     resp.headers['X-Content-Type-Options']='nosniff';resp.headers['X-Frame-Options']='SAMEORIGIN' if (request.path.startswith('/exam-files/') or request.path.startswith('/library/')) else 'DENY'
     resp.headers['Referrer-Policy']='same-origin'
-    if request.path.startswith('/api/'):resp.headers['Cache-Control']='no-store'
+    if request.path.startswith('/api/') or request.path in ('/', '/login'):resp.headers['Cache-Control']='no-store'
     return resp
 
-@app.route('/login',methods=['GET','POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    password_hash=os.getenv('APP_PASSWORD_HASH','')
-    if not password_hash:return render_template('index.html',csrf=get_csrf())
-    if request.method=='POST':
-        if check_password_hash(password_hash,request.form.get('password','')):
-            session.clear();session['authenticated']=True
-            from flask import redirect
-            return redirect('/')
-        return render_template('login.html',error='Senha incorreta'),401
-    return render_template('login.html')
+    credentials = login_credentials()
+    if request.method == 'POST':
+        if not credentials:
+            return render_template('login.html', error='Acesso não configurado. Execute python setup_login.py no servidor.'), 503
+        supplied_username = request.form.get('username', '').strip()
+        supplied_password = request.form.get('password', '')
+        # Verifique ambos os campos; evite diferenças de tempo na comparação do usuário.
+        name_ok = hmac.compare_digest(
+            supplied_username.encode('utf-8'), credentials['username'].encode('utf-8')
+        )
+        password_ok = check_password_hash(credentials['password_hash'], supplied_password)
+        if name_ok and password_ok:
+            session.clear()
+            session['authenticated'] = True
+            session['login_user'] = credentials['username']
+            return redirect(url_for('index'))
+        return render_template('login.html', error='Usuário ou senha incorretos.'), 401
+    if session.get('authenticated') and credentials:
+        return redirect(url_for('index'))
+    return render_template('login.html', setup_needed=not bool(credentials))
 
 @app.route('/logout',methods=['POST'])
 def logout():
@@ -225,7 +254,7 @@ def get_csrf():
     return session['csrf']
 
 @app.route('/')
-def index():return render_template('index.html',csrf=get_csrf(),auth=bool(os.getenv('APP_PASSWORD_HASH')))
+def index():return render_template('index.html',csrf=get_csrf(),auth=True)
 
 @app.route('/manifest.webmanifest')
 def manifest():return app.send_static_file('manifest.webmanifest')
@@ -563,4 +592,4 @@ from study_extension import register_study_routes
 register_study_routes(app, db, ROOT, DB_PATH, REAL_EXAMS, attempt_data, today, TZ)
 
 if __name__=='__main__':
-    app.run(host='127.0.0.1',port=int(os.getenv('PORT','5000')),debug=os.getenv('FLASK_DEBUG')=='1')
+    app.run(host='127.0.0.1',port=int(os.getenv('PORT','5001')),debug=os.getenv('FLASK_DEBUG')=='1')

@@ -1,1 +1,35 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Entrar · EstudaObjetiva</title><link rel="stylesheet" href="/static/style.css"></head><body class="login-body"><form action="/login" method="post" class="login-panel"><div class="logo-icon">◈</div><h1>EstudaObjetiva</h1><p>Seu espaço de preparação para o concurso.</p>{% if error %}<div class="alert">{{error}}</div>{% endif %}<label>Senha de acesso</label><input type="password" name="password" required autofocus><button class="btn primary" type="submit">Entrar no painel</button></form></body></html>
+<!doctype html>
+<html lang="pt-BR"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c1730"><meta name="robots" content="noindex,nofollow">
+  <title>Entrar • EstudaObjetiva</title>
+  <link rel="icon" href="/static/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/login.css?v=usuario-senha-1">
+</head><body>
+  <main class="screen">
+    <section class="welcome" aria-label="Bem-vindo ao EstudaObjetiva">
+      <div class="eyebrow"><span class="star">◈</span> ESTUDAOBJETIVA</div>
+      <h1>Seu futuro começa<br><em>com preparação.</em></h1>
+      <p>Organize seus estudos, acompanhe seus avanços e pratique com provas reais.</p>
+      <div class="tags"><span>◷ Registro de estudos</span><span>▤ Banco de provas</span><span>▥ Simulados</span></div>
+      <div class="foot">Preparação para o concurso de Novo Cabrais • 2027</div>
+    </section>
+    <section class="right">
+      <div class="mobile-brand">◈ <b>Estuda<span>Objetiva</span></b></div>
+      <form method="post" action="/login" class="panel" autocomplete="on">
+        <div class="icon" aria-hidden="true">▣</div>
+        <h2>Acesse sua conta</h2>
+        <p class="sub">Entre com seu usuário e sua senha para continuar.</p>
+        {% if error %}<div class="alert" role="alert">{{ error }}</div>{% endif %}
+        {% if setup_needed %}<div class="notice" role="status">O administrador precisa criar um usuário no servidor com <code>python setup_login.py</code>.</div>{% endif %}
+        <label for="username">Usuário</label>
+        <input id="username" type="text" name="username" maxlength="64" autocomplete="username" placeholder="Digite seu usuário" required autofocus>
+        <label for="password">Senha</label>
+        <div class="pw"><input id="password" type="password" name="password" autocomplete="current-password" placeholder="Digite sua senha" required><button type="button" id="togglePw" aria-label="Mostrar senha" aria-pressed="false">Mostrar</button></div>
+        <button type="submit" class="login-button">Entrar no EstudaObjetiva <span>→</span></button>
+        <div class="secure">♢ Acesso protegido • Suas anotações permanecem privadas</div>
+      </form>
+    </section>
+  </main>
+  <script>const t=document.getElementById('togglePw'),p=document.getElementById('password');t.addEventListener('click',()=>{const visible=p.type==='password';p.type=visible?'text':'password';t.textContent=visible?'Ocultar':'Mostrar';t.setAttribute('aria-label',visible?'Ocultar senha':'Mostrar senha');t.setAttribute('aria-pressed',String(visible));});</script>
+</body></html>
