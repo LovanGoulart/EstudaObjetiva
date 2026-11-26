@@ -44,3 +44,29 @@
   .login-button { height: 46px; margin-top: 18px; }
   .secure { margin-top: 14px; }
 }
+
+/* 26/11/2026 — login centralizado e ligeiramente mais compacto. */
+html,body{margin:0;max-width:100%;overflow-x:hidden;}
+@media(min-width:861px) and (min-height:600px){
+ html,body{height:100%;overflow-y:hidden;}
+ .right{overflow-y:hidden!important;}
+ .screen{height:100dvh;min-height:0;}
+ .panel{padding:clamp(14px,2vh,22px)!important;}
+ .panel h2{margin:9px 0 4px!important;}
+ .sub{margin-bottom:8px!important;}
+ label{margin:8px 0 4px!important;}
+ input{height:40px!important;}
+ .pw button{top:3px!important;}
+ .login-button{height:43px!important;margin-top:12px!important;}
+ .secure{margin-top:8px!important;}
+}
+@media(max-width:860px){
+ .right{padding-top:12px!important;padding-bottom:12px!important;}
+ .mobile-brand{margin-bottom:9px!important;}
+ .panel{padding:18px!important;}
+ .panel h2{margin:10px 0 5px!important;}
+ .sub{margin-bottom:10px!important;}
+ label{margin:9px 0 5px!important;}
+ .login-button{margin-top:12px!important;}
+ .secure{margin-top:9px!important;}
+}

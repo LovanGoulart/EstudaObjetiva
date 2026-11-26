@@ -163,6 +163,11 @@ def init_db():
             con.execute("CREATE TABLE planner(id INTEGER PRIMARY KEY,focus TEXT NOT NULL,done INTEGER NOT NULL DEFAULT 0,notes TEXT NOT NULL DEFAULT '')")
             con.execute('INSERT INTO planner(id,focus,done,notes) SELECT id,focus,done,notes FROM planner_old ORDER BY day')
             con.execute('DROP TABLE planner_old')
+    # ESTUDA_CRONOGRAMA_26_11_V1 — migração sem perda de tarefas anteriores.
+    for column,definition in [('day','TEXT'),('slot','TEXT'),('minutes','INTEGER')]:
+        if column not in [r[1] for r in con.execute('PRAGMA table_info(planner)')]:
+            con.execute(f'ALTER TABLE planner ADD COLUMN {column} {definition}')
+    con.commit()
     weights={'Conhecimentos Específicos':40,'Língua Portuguesa':20,'Matemática':16,'Conhecimentos Gerais':12,'Legislação':12}
     data=json.loads((ROOT/'seed.json').read_text(encoding='utf-8'))
     with con:
@@ -282,7 +287,7 @@ def err(e):return jsonify(error=getattr(e,'description',str(e))),e.code
 def bootstrap():
     con=db();subjects=[rowdict(r) for r in con.execute('SELECT * FROM subjects ORDER BY sort')]
     topics=[rowdict(r) for r in con.execute('SELECT * FROM topics ORDER BY subject_id,id')]
-    planner=[rowdict(r) for r in con.execute('SELECT * FROM planner ORDER BY done,id')]
+    planner=[rowdict(r) for r in con.execute("SELECT * FROM planner ORDER BY CASE WHEN day IS NULL OR day = '' THEN 1 ELSE 0 END, day, CASE slot WHEN 'meio-dia' THEN 0 WHEN 'noite' THEN 1 ELSE 2 END, id")]
     sessions=[rowdict(r) for r in con.execute('SELECT * FROM sessions ORDER BY day DESC,id DESC LIMIT 200')]
     exams=[rowdict(r) for r in con.execute('SELECT *,port*2+mat*2+ger*2+leg*2+esp*4 AS score FROM exams ORDER BY day DESC,id DESC')]
     revisions=[rowdict(r) for r in con.execute('SELECT r.*,t.title,t.subject_id FROM revisions r JOIN topics t ON t.id=r.topic_id WHERE r.completed_at IS NULL ORDER BY due_date,id LIMIT 300')]
@@ -370,8 +375,41 @@ def revision_update(rid):
 def planner_create():
     obj=required_data();focus=obj.get('focus','')
     if not isinstance(focus,str) or not 1<=len(focus.strip())<=180:abort(400,'Informe um assunto com até 180 caracteres')
-    with db():db().execute('INSERT INTO planner(focus) VALUES (?)',(focus.strip(),))
+    day=obj.get('day') or None;slot=obj.get('slot') or None
+    minutes=obj.get('minutes')
+    if day is not None: day=iso_day(day)
+    if slot not in (None,'meio-dia','noite'):abort(400,'Turno inválido')
+    if minutes is not None and (type(minutes)!=int or not 1<=minutes<=600):abort(400,'Duração inválida')
+    with db():db().execute('INSERT INTO planner(focus,day,slot,minutes) VALUES (?,?,?,?)',(focus.strip(),day,slot,minutes))
     return jsonify(ok=True),201
+
+# ESTUDA_CRONOGRAMA_26_11_V1: coloca datas apenas em objetivos pendentes sem agenda.
+@app.post('/api/planner/schedule')
+def planner_schedule():
+    from datetime import date as _date
+    con=db()
+    rows=con.execute("SELECT id FROM planner WHERE done=0 AND (day IS NULL OR day='') ORDER BY id").fetchall()
+    today_date=today()
+    # Horários informados: segunda a quinta, 30 minutos ao meio-dia e 2 horas à noite.
+    # Início informado apenas como "à noite": deliberadamente sem hora inventada.
+    occupied={(r['day'],r['slot']) for r in con.execute("SELECT day,slot FROM planner WHERE day IS NOT NULL AND slot IS NOT NULL")}
+    start=today_date
+    date_cursor=start
+    assigned=0
+    with con:
+        for row in rows:
+            while True:
+                if date_cursor >= _date.fromisoformat(EXAM):
+                    break
+                if date_cursor.weekday() < 4:
+                    free_slots=[slot for slot in ('meio-dia','noite') if (date_cursor.isoformat(),slot) not in occupied]
+                    if free_slots:break
+                date_cursor+=timedelta(days=1)
+            if date_cursor >= _date.fromisoformat(EXAM):break
+            slot=free_slots[0];minutes=30 if slot=='meio-dia' else 120
+            con.execute('UPDATE planner SET day=?,slot=?,minutes=? WHERE id=?',(date_cursor.isoformat(),slot,minutes,row['id']))
+            occupied.add((date_cursor.isoformat(),slot));assigned+=1
+    return jsonify(ok=True,assigned=assigned)
 
 @app.patch('/api/planner/<int:pid>')
 def planner_update(pid):
@@ -381,13 +419,20 @@ def planner_update(pid):
     if done is not None and type(done)!=bool:abort(400,'Concluído inválido')
     if notes is not None and (not isinstance(notes,str) or len(notes)>3000):abort(400,'Nota inválida')
     if focus is not None and (not isinstance(focus,str) or not 1<=len(focus.strip())<=180):abort(400,'Assunto inválido')
-    with con:con.execute('UPDATE planner SET done=?,notes=?,focus=? WHERE id=?',(int(done) if done is not None else p['done'],notes if notes is not None else p['notes'],focus.strip() if focus is not None else p['focus'],pid))
+    day=d.get('day',p['day']);slot=d.get('slot',p['slot']);minutes=d.get('minutes',p['minutes'])
+    if day == '':day=None
+    if day is not None:day=iso_day(day)
+    if slot == '':slot=None
+    if slot not in (None,'meio-dia','noite'):abort(400,'Turno inválido')
+    if minutes in ('',None): minutes=None
+    if minutes is not None and (type(minutes)!=int or not 1<=minutes<=600):abort(400,'Duração inválida')
+    with con:con.execute('UPDATE planner SET done=?,notes=?,focus=?,day=?,slot=?,minutes=? WHERE id=?',(int(done) if done is not None else p['done'],notes if notes is not None else p['notes'],focus.strip() if focus is not None else p['focus'],day,slot,minutes,pid))
     return jsonify(ok=True)
 
 @app.get('/api/backup')
 def backup():
     con=db()
-    data={'version':1,'exported_at':datetime.now(TZ).isoformat(), 'topics':[rowdict(r) for r in con.execute('SELECT subject_id,section,title,status,notes,completed_at,updated_at FROM topics')], 'sessions':[rowdict(r) for r in con.execute('SELECT day,minutes,subject_id,kind,notes,created_at FROM sessions')], 'exams':[rowdict(r) for r in con.execute('SELECT day,name,port,mat,ger,leg,esp,notes,created_at FROM exams')], 'revisions':[rowdict(r) for r in con.execute('SELECT topic_id,due_date,kind,completed_at FROM revisions')], 'planner':[rowdict(r) for r in con.execute('SELECT id,focus,done,notes FROM planner ORDER BY id')], 'real_exam_attempts':[rowdict(r) for r in con.execute('SELECT exam_id,answers,started_at,updated_at,completed_at FROM real_exam_attempts')], 'question_notes':[rowdict(r) for r in con.execute('SELECT exam_id,question_num,note,updated_at FROM question_notes')], 'lesson_progress':[rowdict(r) for r in con.execute('SELECT lesson_id,done,notes,updated_at FROM lesson_progress')]}
+    data={'version':1,'exported_at':datetime.now(TZ).isoformat(), 'topics':[rowdict(r) for r in con.execute('SELECT subject_id,section,title,status,notes,completed_at,updated_at FROM topics')], 'sessions':[rowdict(r) for r in con.execute('SELECT day,minutes,subject_id,kind,notes,created_at FROM sessions')], 'exams':[rowdict(r) for r in con.execute('SELECT day,name,port,mat,ger,leg,esp,notes,created_at FROM exams')], 'revisions':[rowdict(r) for r in con.execute('SELECT topic_id,due_date,kind,completed_at FROM revisions')], 'planner':[rowdict(r) for r in con.execute('SELECT id,focus,done,notes,day,slot,minutes FROM planner ORDER BY id')], 'real_exam_attempts':[rowdict(r) for r in con.execute('SELECT exam_id,answers,started_at,updated_at,completed_at FROM real_exam_attempts')], 'question_notes':[rowdict(r) for r in con.execute('SELECT exam_id,question_num,note,updated_at FROM question_notes')], 'lesson_progress':[rowdict(r) for r in con.execute('SELECT lesson_id,done,notes,updated_at FROM lesson_progress')]}
     resp=app.response_class(json.dumps(data,ensure_ascii=False,indent=2),mimetype='application/json')
     resp.headers['Content-Disposition']=f'attachment; filename="backup-estudaobjetiva-{today().strftime("%d-%m-%Y")}.json"'
     return resp
@@ -439,7 +484,7 @@ def restore():
             con.execute('DELETE FROM planner')
             for p in data['planner'][:1000]:
                 if isinstance(p,dict) and isinstance(p.get('focus'),str) and 1<=len(p['focus'].strip())<=180:
-                    con.execute('INSERT INTO planner(focus,done,notes) VALUES (?,?,?)',(p['focus'].strip(),1 if p.get('done') else 0,str(p.get('notes',''))[:3000]))
+                    con.execute('INSERT INTO planner(focus,done,notes,day,slot,minutes) VALUES (?,?,?,?,?,?)',(p['focus'].strip(),1 if p.get('done') else 0,str(p.get('notes',''))[:3000],p.get('day') if isinstance(p.get('day'),str) and __import__('re').match(r'^\d{4}-\d{2}-\d{2}$',p['day']) else None,p.get('slot') if p.get('slot') in ('meio-dia','noite') else None,p.get('minutes') if type(p.get('minutes')) is int and 1<=p['minutes']<=600 else None))
         if isinstance(data.get('question_notes'),list):
             for note in data['question_notes']:
                 if not isinstance(note,dict) or note.get('exam_id') not in REAL_EXAMS:continue
